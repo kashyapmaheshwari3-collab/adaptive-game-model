@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "n_errors": 0,
-  "n_warnings": 0,
+  "n_warnings": 1,
   "n_checks": 8,
   "issues": [
     {
@@ -20,7 +20,7 @@
       "check": "missing_player_ids",
       "severity": "info",
       "count": 0,
-      "message": "0/6906 on-ball events lack player_id (0.0%)"
+      "message": "0/87756 on-ball events lack player_id (0.0%)"
     },
     {
       "check": "invalid_timestamps",
@@ -42,9 +42,9 @@
     },
     {
       "check": "outliers",
-      "severity": "info",
-      "count": 0,
-      "message": "No outlier values flagged"
+      "severity": "warning",
+      "count": 34,
+      "message": "34 passes longer than 90m"
     },
     {
       "check": "leakage",
@@ -53,7 +53,7 @@
       "message": "No match-level leakage between train and test"
     }
   ],
-  "rows_in": 7952,
-  "matches": 24,
-  "generated_at": "2026-09-12T18:49:15.875818+00:00"
+  "rows_in": 148071,
+  "matches": 40,
+  "generated_at": "2026-09-12T19:59:25.610135+00:00"
 }

@@ -98,6 +98,11 @@ raw data -> validation -> cleaning -> event standardisation
 
 ## Installation
 
+> **New here? Read [`docs/GETTING_STARTED.md`](docs/GETTING_STARTED.md) first** —
+> a plain-language guide for analysts/coaches with what to download, what to
+> install, and how to run everything in ~15 minutes. Deployment details are in
+> [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
+
 ```bash
 # 1. Clone / unzip
 git clone https://github.com/your-handle/adaptive-game-model.git

@@ -1,72 +1,72 @@
 {
   "ablation": {
     "full": {
-      "rmse": 0.02907738444038557,
-      "mae": 0.020827453686989603,
-      "r2": 0.17547070080568583,
-      "n": 439
+      "rmse": 0.05210361828894415,
+      "mae": 0.0318658593321596,
+      "r2": 0.1436179793021365,
+      "n": 1531
     },
     "no_elo": {
-      "rmse": 0.02900781681325823,
-      "mae": 0.020487065532567652,
-      "r2": 0.1794113529933099,
-      "n": 439
+      "rmse": 0.052178376769371204,
+      "mae": 0.03189698515812277,
+      "r2": 0.14115873558673508,
+      "n": 1531
     },
     "no_match_context": {
-      "rmse": 0.029000614964813366,
-      "mae": 0.02078434291556171,
-      "r2": 0.1798187618992606,
-      "n": 439
+      "rmse": 0.052127062253871356,
+      "mae": 0.03196514222539674,
+      "r2": 0.14284714965434486,
+      "n": 1531
     },
     "no_location": {
-      "rmse": 0.031084502588596748,
-      "mae": 0.022526204636746483,
-      "r2": 0.057712868255455074,
-      "n": 439
+      "rmse": 0.05279855285107377,
+      "mae": 0.032216449409189336,
+      "r2": 0.1206215629901164,
+      "n": 1531
     }
   },
   "match_drop_sensitivity": {
+    "neutral_buildup::s_mid_block_retreat": {
+      "n_estimates": 1,
+      "estimate_range": [
+        0.01624298013001025,
+        0.01624298013001025
+      ],
+      "spread": 0.0,
+      "stable": true
+    },
     "final_third_vs_compact_defence::s_third_man_combination": {
       "n_estimates": 1,
       "estimate_range": [
-        0.013215823612673759,
-        0.013215823612673759
+        0.01156520911397675,
+        0.01156520911397675
       ],
       "spread": 0.0,
       "stable": true
     },
-    "opponent_high_press::s_third_man_combination": {
+    "wide_overload::s_aggressive_counterpress": {
       "n_estimates": 1,
       "estimate_range": [
-        0.011008491780848605,
-        0.011008491780848605
+        0.007562542937992665,
+        0.007562542937992665
       ],
       "spread": 0.0,
       "stable": true
     },
-    "final_third_vs_compact_defence::s_reduce_risky_central_passes": {
+    "opponent_low_block::s_aggressive_counterpress": {
       "n_estimates": 1,
       "estimate_range": [
-        0.009865098154614282,
-        0.009865098154614282
+        0.0021108793695777993,
+        0.0021108793695777993
       ],
       "spread": 0.0,
       "stable": true
     },
-    "opponent_high_press::s_increase_winger_width": {
+    "opponent_high_press::s_aggressive_counterpress": {
       "n_estimates": 1,
       "estimate_range": [
-        0.006178805945873539,
-        0.006178805945873539
-      ],
-      "spread": 0.0,
-      "stable": true
-    },
-    "final_third_vs_compact_defence::s_increase_winger_width": {
-      "n_estimates": 1,
-      "estimate_range": [
-        0.0040566282808508335,
-        0.0040566282808508335
+        -0.00024280381647569878,
+        -0.00024280381647569878
       ],
       "spread": 0.0,
       "stable": true

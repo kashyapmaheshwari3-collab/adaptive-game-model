@@ -6,299 +6,301 @@
     "season_id": 27,
     "source": "https://github.com/statsbomb/open-data",
     "license": "CC BY-NC-SA 4.0 (StatsBomb Open Data)",
-    "n_matches": 24,
-    "n_events": 7952,
-    "n_teams": 3,
+    "n_matches": 40,
+    "n_events": 148071,
+    "n_teams": 0,
     "match_date_range": [
-      "2026-01-02 00:00:00",
-      "2026-01-25 00:00:00"
+      "2015-08-22",
+      "2015-12-12"
     ],
-    "generated_at": "2026-09-12T18:48:51.158382+00:00",
+    "generated_at": "2026-09-12T19:56:08.914991+00:00",
     "provenance": {
-      "data_source": "synthetic",
-      "note": "offline/CI fallback generator"
+      "data_source": "statsbomb_open_data",
+      "competition_id": 11,
+      "season_id": 27
     }
   },
   "data_source": {
-    "data_source": "synthetic",
-    "note": "offline/CI fallback generator"
+    "data_source": "statsbomb_open_data",
+    "competition_id": 11,
+    "season_id": 27
   },
   "target": "Expected Possession Value (EPV) in goal-probability units",
   "value_model": "XGBoost regressor + isotonic calibration",
   "state_model": "KMeans clustering with rule-based football naming",
   "adjustment_estimator": "Stabilised IPW + doubly-robust (AIPW), match-clustered bootstrap CIs",
   "validation": {
-    "train": 14,
-    "val": 5,
-    "test": 5,
+    "train": 24,
+    "val": 8,
+    "test": 8,
     "n_possessions": {
-      "train": 1123,
-      "val": 393,
-      "test": 439
+      "train": 4542,
+      "val": 1509,
+      "test": 1531
     }
   },
   "metrics": {
     "xgboost_calibrated": {
-      "rmse": 0.030077789754484684,
-      "mae": 0.022177847174551662,
-      "r2": 0.11775896412983056,
-      "n": 439
+      "rmse": 0.05210801279262964,
+      "mae": 0.031810192835878534,
+      "r2": 0.14347351591267288,
+      "n": 1531
     },
     "xgboost_raw": {
-      "rmse": 0.030041295509580408,
-      "mae": 0.021556211689410666,
-      "r2": 0.1198985620250328,
-      "n": 439
+      "rmse": 0.052786576123435056,
+      "mae": 0.03227846125803654,
+      "r2": 0.12102047094968293,
+      "n": 1531
     },
     "linear": {
-      "rmse": 0.02768448022588438,
-      "mae": 0.020235693783845713,
-      "r2": 0.25257406401035754,
-      "n": 439
+      "rmse": 0.05942361354861258,
+      "mae": 0.032980285267610314,
+      "r2": -0.11390945234495442,
+      "n": 1531
     },
     "elo_only": {
-      "rmse": 0.03228463422687376,
-      "mae": 0.025520967719625483,
-      "r2": -0.016452659614792697,
-      "n": 439
+      "rmse": 0.056448926239563046,
+      "mae": 0.03423899876067797,
+      "r2": -0.005178392632731343,
+      "n": 1531
     },
     "league_average": {
-      "rmse": 0.03217948865863057,
-      "mae": 0.025676230666718054,
-      "r2": -0.009842613852608206,
-      "n": 439
+      "rmse": 0.056448926239563046,
+      "mae": 0.03423899876067797,
+      "r2": -0.005178392632731343,
+      "n": 1531
     }
   },
   "calibration": {
-    "ece": 0.0025887849530393833,
-    "mse": 0.0009046734365149836,
-    "n": 439,
+    "ece": 0.004005160998818345,
+    "mse": 0.0027152449971968545,
+    "n": 1531,
     "bins": [
       {
         "bin": 0,
-        "pred_mean": 0.007761579980261454,
-        "actual_mean": 0.008629767441860465,
-        "n": 43
+        "pred_mean": 0.016463276154225,
+        "actual_mean": 0.02038424836601307,
+        "n": 153
       },
       {
         "bin": 1,
-        "pred_mean": 0.009639373283584064,
-        "actual_mean": 0.009045000000000001,
-        "n": 44
+        "pred_mean": 0.01797570881226054,
+        "actual_mean": 0.0240978431372549,
+        "n": 153
       },
       {
         "bin": 2,
-        "pred_mean": 0.011416138613861386,
-        "actual_mean": 0.010656363636363636,
-        "n": 44
+        "pred_mean": 0.024395089845491196,
+        "actual_mean": 0.01769437908496732,
+        "n": 153
       },
       {
         "bin": 3,
-        "pred_mean": 0.011416138613861386,
-        "actual_mean": 0.012394318181818182,
-        "n": 44
+        "pred_mean": 0.024567422222222222,
+        "actual_mean": 0.022274379084967322,
+        "n": 153
       },
       {
         "bin": 4,
-        "pred_mean": 0.011693059743474345,
-        "actual_mean": 0.013134545454545456,
-        "n": 44
+        "pred_mean": 0.024567422222222222,
+        "actual_mean": 0.0221362091503268,
+        "n": 153
       },
       {
         "bin": 5,
-        "pred_mean": 0.013156785714285716,
-        "actual_mean": 0.01705409090909091,
-        "n": 44
+        "pred_mean": 0.02686169482102593,
+        "actual_mean": 0.021409673202614377,
+        "n": 153
       },
       {
         "bin": 6,
-        "pred_mean": 0.016177396770235473,
-        "actual_mean": 0.026818181818181828,
-        "n": 44
+        "pred_mean": 0.03340294896865488,
+        "actual_mean": 0.0313286274509804,
+        "n": 153
       },
       {
         "bin": 7,
-        "pred_mean": 0.029892578884396507,
-        "actual_mean": 0.033763409090909094,
-        "n": 44
+        "pred_mean": 0.03655179401993356,
+        "actual_mean": 0.03045,
+        "n": 153
       },
       {
         "bin": 8,
-        "pred_mean": 0.0340935593220339,
-        "actual_mean": 0.03323181818181819,
-        "n": 44
+        "pred_mean": 0.0381889795453065,
+        "actual_mean": 0.03956104575163399,
+        "n": 153
       },
       {
         "bin": 9,
-        "pred_mean": 0.046161082450763426,
-        "actual_mean": 0.044225,
-        "n": 44
+        "pred_mean": 0.059956461871843614,
+        "actual_mean": 0.05637038961038961,
+        "n": 154
       }
     ],
-    "mean_actual": 0.020923189066059222,
-    "mean_pred": 0.01916669004236236
+    "mean_actual": 0.02858883736120183,
+    "mean_pred": 0.030312455016198073
   },
   "error_analysis": {
     "successes": [
       {
-        "match_id": 24,
-        "possession": 11,
-        "team": "Getafe Azulon",
-        "opponent": "FC Azul Marino",
+        "match_id": 3825666,
+        "possession": 122,
+        "team": "Real Betis",
+        "opponent": null,
         "state": "unknown",
-        "minute": 11,
-        "actual_epv": 0.0,
-        "pred_epv": 0.0,
-        "residual": 0.0,
-        "outcome_level": 0,
-        "explanation": "Model over-predicted value in unknown: possession was lost early despite an advantageous start position - opponent pressure in the specific sequence was higher than the aggregate context suggested."
+        "minute": 57,
+        "actual_epv": 0.03644,
+        "pred_epv": 0.03655179401993356,
+        "residual": -0.00011179401993356014,
+        "outcome_level": 4,
+        "explanation": "Model over-predicted value in unknown: long, patient possession with no final-third entry - possession without penetration inflates ex-ante value."
       },
       {
-        "match_id": 20,
-        "possession": 29,
-        "team": "Betis Verdiblanco",
-        "opponent": "FC Azul Marino",
+        "match_id": 3825678,
+        "possession": 45,
+        "team": "Eibar",
+        "opponent": null,
         "state": "unknown",
-        "minute": 24,
-        "actual_epv": 0.0,
-        "pred_epv": 0.0,
-        "residual": 0.0,
-        "outcome_level": 0,
-        "explanation": "Model over-predicted value in unknown: possession was lost early despite an advantageous start position - opponent pressure in the specific sequence was higher than the aggregate context suggested."
+        "minute": 18,
+        "actual_epv": 0.03692,
+        "pred_epv": 0.03655179401993356,
+        "residual": 0.0003682059800664411,
+        "outcome_level": 4,
+        "explanation": "Model under-predicted value in unknown: the possession created a dangerous action (shot assist / box entry) that the ex-ante features could not foresee."
       },
       {
-        "match_id": 22,
-        "possession": 11,
-        "team": "Sociedad Txuri",
-        "opponent": "FC Azul Marino",
+        "match_id": 266961,
+        "possession": 78,
+        "team": "Barcelona",
+        "opponent": null,
         "state": "unknown",
-        "minute": 13,
-        "actual_epv": 0.0,
-        "pred_epv": 0.0,
-        "residual": 0.0,
-        "outcome_level": 0,
-        "explanation": "Model over-predicted value in unknown: possession was lost early despite an advantageous start position - opponent pressure in the specific sequence was higher than the aggregate context suggested."
+        "minute": 41,
+        "actual_epv": 0.02505,
+        "pred_epv": 0.024567422222222225,
+        "residual": 0.00048257777777777414,
+        "outcome_level": 4,
+        "explanation": "Model under-predicted value in unknown: the possession created a dangerous action (shot assist / box entry) that the ex-ante features could not foresee."
       }
     ],
     "failures": [
       {
-        "match_id": 21,
-        "possession": 47,
-        "team": "FC Azul Marino",
-        "opponent": "Villarreal Amarillo",
+        "match_id": 266885,
+        "possession": 182,
+        "team": "Barcelona",
+        "opponent": null,
         "state": "unknown",
-        "minute": 37,
-        "actual_epv": 0.13798,
-        "pred_epv": 0.011416138613861386,
-        "residual": 0.1265638613861386,
-        "outcome_level": 3,
-        "explanation": "Model under-predicted value in unknown: the possession created a dangerous action (shot assist / box entry) that the ex-ante features could not foresee.",
-        "failure_cause": "context mismatch",
-        "data_that_would_improve": "xT-style pitch control maps / tracking data for actual space opened"
+        "minute": 89,
+        "actual_epv": 0.60288,
+        "pred_epv": 0.03655179401993356,
+        "residual": 0.5663282059800664,
+        "outcome_level": 5,
+        "explanation": "Model expected a routine possession but a 0.60-xG chance arrived from a unknown scenario - high-variance outcomes from sparse rare events.",
+        "failure_cause": "rare high-variance event (shot) not captured ex-ante",
+        "data_that_would_improve": "opponent pressure intensity at each action (pressure events are partially captured)"
       },
       {
-        "match_id": 24,
-        "possession": 16,
-        "team": "Getafe Azulon",
-        "opponent": "FC Azul Marino",
+        "match_id": 3825666,
+        "possession": 17,
+        "team": "Atl\u00e9tico Madrid",
+        "opponent": null,
         "state": "unknown",
-        "minute": 15,
-        "actual_epv": 0.11086,
-        "pred_epv": 0.009458767123287672,
-        "residual": 0.10140123287671232,
-        "outcome_level": 3,
-        "explanation": "Model under-predicted value in unknown: the possession created a dangerous action (shot assist / box entry) that the ex-ante features could not foresee.",
-        "failure_cause": "context mismatch",
-        "data_that_would_improve": "xT-style pitch control maps / tracking data for actual space opened"
+        "minute": 6,
+        "actual_epv": 0.57489,
+        "pred_epv": 0.0575972972972973,
+        "residual": 0.5172927027027027,
+        "outcome_level": 5,
+        "explanation": "Model expected a routine possession but a 0.57-xG chance arrived from a unknown scenario - high-variance outcomes from sparse rare events.",
+        "failure_cause": "rare high-variance event (shot) not captured ex-ante",
+        "data_that_would_improve": "opponent pressure intensity at each action (pressure events are partially captured)"
       },
       {
-        "match_id": 22,
-        "possession": 28,
-        "team": "FC Azul Marino",
-        "opponent": "Sociedad Txuri",
+        "match_id": 3825674,
+        "possession": 116,
+        "team": "Atl\u00e9tico Madrid",
+        "opponent": null,
         "state": "unknown",
-        "minute": 31,
-        "actual_epv": 0.11215,
-        "pred_epv": 0.011416138613861386,
-        "residual": 0.10073386138613862,
-        "outcome_level": 3,
-        "explanation": "Model under-predicted value in unknown: the possession created a dangerous action (shot assist / box entry) that the ex-ante features could not foresee.",
-        "failure_cause": "context mismatch",
-        "data_that_would_improve": "xT-style pitch control maps / tracking data for actual space opened"
+        "minute": 47,
+        "actual_epv": 0.45181,
+        "pred_epv": 0.03655179401993356,
+        "residual": 0.4152582059800664,
+        "outcome_level": 5,
+        "explanation": "Model expected a routine possession but a 0.45-xG chance arrived from a unknown scenario - high-variance outcomes from sparse rare events.",
+        "failure_cause": "rare high-variance event (shot) not captured ex-ante",
+        "data_that_would_improve": "opponent pressure intensity at each action (pressure events are partially captured)"
       }
     ],
-    "n_test": 439,
-    "median_abs_resid": 0.013156785714285718,
-    "p90_abs_resid": 0.041185330343503176
+    "n_test": 1531,
+    "median_abs_resid": 0.022737422222222227,
+    "p90_abs_resid": 0.06344820598006645
   },
   "ablation": {
     "full": {
-      "rmse": 0.02907738444038557,
-      "mae": 0.020827453686989603,
-      "r2": 0.17547070080568583,
-      "n": 439
+      "rmse": 0.05210361828894415,
+      "mae": 0.0318658593321596,
+      "r2": 0.1436179793021365,
+      "n": 1531
     },
     "no_elo": {
-      "rmse": 0.02900781681325823,
-      "mae": 0.020487065532567652,
-      "r2": 0.1794113529933099,
-      "n": 439
+      "rmse": 0.052178376769371204,
+      "mae": 0.03189698515812277,
+      "r2": 0.14115873558673508,
+      "n": 1531
     },
     "no_match_context": {
-      "rmse": 0.029000614964813366,
-      "mae": 0.02078434291556171,
-      "r2": 0.1798187618992606,
-      "n": 439
+      "rmse": 0.052127062253871356,
+      "mae": 0.03196514222539674,
+      "r2": 0.14284714965434486,
+      "n": 1531
     },
     "no_location": {
-      "rmse": 0.031084502588596748,
-      "mae": 0.022526204636746483,
-      "r2": 0.057712868255455074,
-      "n": 439
+      "rmse": 0.05279855285107377,
+      "mae": 0.032216449409189336,
+      "r2": 0.1206215629901164,
+      "n": 1531
     }
   },
   "sensitivity": {
+    "neutral_buildup::s_mid_block_retreat": {
+      "n_estimates": 1,
+      "estimate_range": [
+        0.01624298013001025,
+        0.01624298013001025
+      ],
+      "spread": 0.0,
+      "stable": true
+    },
     "final_third_vs_compact_defence::s_third_man_combination": {
       "n_estimates": 1,
       "estimate_range": [
-        0.013215823612673759,
-        0.013215823612673759
+        0.01156520911397675,
+        0.01156520911397675
       ],
       "spread": 0.0,
       "stable": true
     },
-    "opponent_high_press::s_third_man_combination": {
+    "wide_overload::s_aggressive_counterpress": {
       "n_estimates": 1,
       "estimate_range": [
-        0.011008491780848605,
-        0.011008491780848605
+        0.007562542937992665,
+        0.007562542937992665
       ],
       "spread": 0.0,
       "stable": true
     },
-    "final_third_vs_compact_defence::s_reduce_risky_central_passes": {
+    "opponent_low_block::s_aggressive_counterpress": {
       "n_estimates": 1,
       "estimate_range": [
-        0.009865098154614282,
-        0.009865098154614282
+        0.0021108793695777993,
+        0.0021108793695777993
       ],
       "spread": 0.0,
       "stable": true
     },
-    "opponent_high_press::s_increase_winger_width": {
+    "opponent_high_press::s_aggressive_counterpress": {
       "n_estimates": 1,
       "estimate_range": [
-        0.006178805945873539,
-        0.006178805945873539
-      ],
-      "spread": 0.0,
-      "stable": true
-    },
-    "final_third_vs_compact_defence::s_increase_winger_width": {
-      "n_estimates": 1,
-      "estimate_range": [
-        0.0040566282808508335,
-        0.0040566282808508335
+        -0.00024280381647569878,
+        -0.00024280381647569878
       ],
       "spread": 0.0,
       "stable": true

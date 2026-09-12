@@ -3,16 +3,17 @@
   "season_id": 27,
   "source": "https://github.com/statsbomb/open-data",
   "license": "CC BY-NC-SA 4.0 (StatsBomb Open Data)",
-  "n_matches": 24,
-  "n_events": 7952,
-  "n_teams": 3,
+  "n_matches": 40,
+  "n_events": 148071,
+  "n_teams": 0,
   "match_date_range": [
-    "2026-01-02 00:00:00",
-    "2026-01-25 00:00:00"
+    "2015-08-22",
+    "2015-12-12"
   ],
-  "generated_at": "2026-09-12T18:48:51.158382+00:00",
+  "generated_at": "2026-09-12T19:56:08.914991+00:00",
   "provenance": {
-    "data_source": "synthetic",
-    "note": "offline/CI fallback generator"
+    "data_source": "statsbomb_open_data",
+    "competition_id": 11,
+    "season_id": 27
   }
 }

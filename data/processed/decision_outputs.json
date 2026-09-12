@@ -1,28 +1,111 @@
 {
-  "1": {
-    "home_team": "CF Real Blanco",
-    "away_team": "Atletico Verde",
-    "match_date": "2026-01-02 00:00:00",
+  "266166": {
+    "home_team": "Atl\u00e9tico Madrid",
+    "away_team": "Barcelona",
+    "match_date": "2015-09-12",
+    "home_score": 1,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 86,
+        "share": 0.5
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 30,
+        "share": 0.174
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 25,
+        "share": 0.145
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 25,
+        "share": 0.145
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 6,
+        "share": 0.035
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "266236": {
+    "home_team": "Athletic Club",
+    "away_team": "Barcelona",
+    "match_date": "2015-08-23",
     "home_score": 0,
     "away_score": 1,
     "states": [
       {
         "state": "opponent_high_press",
         "label": "opponent_high_press",
-        "count": 67,
-        "share": 0.905
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 7,
-        "share": 0.095
+        "count": 94,
+        "share": 0.57
       },
       {
         "state": "opponent_low_block",
         "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "count": 31,
+        "share": 0.188
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 21,
+        "share": 0.127
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 15,
+        "share": 0.091
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 4,
+        "share": 0.024
       },
       {
         "state": "narrow_front_two_buildup",
@@ -37,8 +120,73 @@
         "share": 0.0
       },
       {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "266424": {
+    "home_team": "Real Madrid",
+    "away_team": "Barcelona",
+    "match_date": "2015-11-21",
+    "home_score": 0,
+    "away_score": 4,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 92,
+        "share": 0.462
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 33,
+        "share": 0.166
+      },
+      {
         "state": "wide_overload",
         "label": "wide_overload",
+        "count": 32,
+        "share": 0.161
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 25,
+        "share": 0.126
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 17,
+        "share": 0.085
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
         "count": 0,
         "share": 0.0
       },
@@ -47,53 +195,201 @@
         "label": "central_progression",
         "count": 0,
         "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "266467": {
+    "home_team": "Celta Vigo",
+    "away_team": "Barcelona",
+    "match_date": "2015-09-23",
+    "home_score": 4,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 90,
+        "share": 0.495
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 36,
+        "share": 0.198
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 24,
+        "share": 0.132
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 19,
+        "share": 0.104
       },
       {
         "state": "neutral_buildup",
         "label": "neutral_buildup",
+        "count": 13,
+        "share": 0.071
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
         "count": 0,
         "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   },
-  "2": {
-    "home_team": "CF Real Blanco",
-    "away_team": "FC Azul Marino",
-    "match_date": "2026-01-03 00:00:00",
-    "home_score": 0,
+  "266490": {
+    "home_team": "Barcelona",
+    "away_team": "Levante UD",
+    "match_date": "2015-09-20",
+    "home_score": 4,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 88,
+        "share": 0.449
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 40,
+        "share": 0.204
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 33,
+        "share": 0.168
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 18,
+        "share": 0.092
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 17,
+        "share": 0.087
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "266885": {
+    "home_team": "Barcelona",
+    "away_team": "Real Sociedad",
+    "match_date": "2015-11-28",
+    "home_score": 4,
     "away_score": 0,
     "states": [
       {
         "state": "opponent_high_press",
         "label": "opponent_high_press",
-        "count": 84,
-        "share": 0.944
+        "count": 80,
+        "share": 0.44
       },
       {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 5,
-        "share": 0.056
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 30,
+        "share": 0.165
       },
       {
         "state": "opponent_low_block",
         "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "count": 29,
+        "share": 0.159
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 29,
+        "share": 0.159
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 14,
+        "share": 0.077
       },
       {
         "state": "narrow_front_two_buildup",
@@ -108,8 +404,73 @@
         "share": 0.0
       },
       {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "266961": {
+    "home_team": "Barcelona",
+    "away_team": "RC Deportivo La Coru\u00f1a",
+    "match_date": "2015-12-12",
+    "home_score": 2,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 74,
+        "share": 0.413
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 38,
+        "share": 0.212
+      },
+      {
         "state": "wide_overload",
         "label": "wide_overload",
+        "count": 31,
+        "share": 0.173
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 22,
+        "share": 0.123
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 14,
+        "share": 0.078
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
         "count": 0,
         "share": 0.0
       },
@@ -118,53 +479,59 @@
         "label": "central_progression",
         "count": 0,
         "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   },
-  "3": {
-    "home_team": "CF Real Blanco",
-    "away_team": "Sevilla Roja",
-    "match_date": "2026-01-04 00:00:00",
+  "267274": {
+    "home_team": "Valencia",
+    "away_team": "Barcelona",
+    "match_date": "2015-12-05",
     "home_score": 1,
     "away_score": 1,
     "states": [
       {
         "state": "opponent_high_press",
         "label": "opponent_high_press",
-        "count": 71,
-        "share": 0.91
+        "count": 80,
+        "share": 0.476
       },
       {
         "state": "final_third_vs_compact_defence",
         "label": "final_third_vs_compact_defence",
-        "count": 7,
-        "share": 0.09
+        "count": 35,
+        "share": 0.208
       },
       {
         "state": "opponent_low_block",
         "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "count": 26,
+        "share": 0.155
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 16,
+        "share": 0.095
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 11,
+        "share": 0.065
       },
       {
         "state": "narrow_front_two_buildup",
@@ -179,8 +546,73 @@
         "share": 0.0
       },
       {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "267422": {
+    "home_team": "Barcelona",
+    "away_team": "M\u00e1laga",
+    "match_date": "2015-08-29",
+    "home_score": 1,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 88,
+        "share": 0.476
+      },
+      {
         "state": "wide_overload",
         "label": "wide_overload",
+        "count": 34,
+        "share": 0.184
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 22,
+        "share": 0.119
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 22,
+        "share": 0.119
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 19,
+        "share": 0.103
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
         "count": 0,
         "share": 0.0
       },
@@ -189,33 +621,169 @@
         "label": "central_progression",
         "count": 0,
         "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "267611": {
+    "home_team": "Barcelona",
+    "away_team": "Las Palmas",
+    "match_date": "2015-09-26",
+    "home_score": 2,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 83,
+        "share": 0.469
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 33,
+        "share": 0.186
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 23,
+        "share": 0.13
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 20,
+        "share": 0.113
       },
       {
         "state": "neutral_buildup",
         "label": "neutral_buildup",
+        "count": 18,
+        "share": 0.102
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
         "count": 0,
         "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   },
-  "4": {
-    "home_team": "CF Real Blanco",
-    "away_team": "Valencia Naranja",
-    "match_date": "2026-01-05 00:00:00",
+  "3825563": {
+    "home_team": "Atl\u00e9tico Madrid",
+    "away_team": "Las Palmas",
+    "match_date": "2015-08-22",
+    "home_score": 1,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 82,
+        "share": 0.469
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 33,
+        "share": 0.189
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 29,
+        "share": 0.166
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 22,
+        "share": 0.126
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 9,
+        "share": 0.051
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825567": {
+    "home_team": "Sporting Gij\u00f3n",
+    "away_team": "Real Madrid",
+    "match_date": "2015-08-23",
     "home_score": 0,
     "away_score": 0,
     "states": [
@@ -223,232 +791,31 @@
         "state": "opponent_high_press",
         "label": "opponent_high_press",
         "count": 73,
-        "share": 0.88
+        "share": 0.422
       },
       {
         "state": "final_third_vs_compact_defence",
         "label": "final_third_vs_compact_defence",
-        "count": 10,
-        "share": 0.12
+        "count": 40,
+        "share": 0.231
       },
       {
         "state": "opponent_low_block",
         "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
+        "count": 27,
+        "share": 0.156
       },
       {
         "state": "wide_overload",
         "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
+        "count": 24,
+        "share": 0.139
       },
       {
         "state": "neutral_buildup",
         "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "5": {
-    "home_team": "CF Real Blanco",
-    "away_team": "Betis Verdiblanco",
-    "match_date": "2026-01-06 00:00:00",
-    "home_score": 1,
-    "away_score": 1,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 74,
-        "share": 0.914
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 7,
-        "share": 0.086
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "6": {
-    "home_team": "CF Real Blanco",
-    "away_team": "Villarreal Amarillo",
-    "match_date": "2026-01-07 00:00:00",
-    "home_score": 0,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 67,
-        "share": 0.838
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 13,
-        "share": 0.163
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "7": {
-    "home_team": "CF Real Blanco",
-    "away_team": "Sociedad Txuri",
-    "match_date": "2026-01-08 00:00:00",
-    "home_score": 1,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 75,
-        "share": 0.893
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
         "count": 9,
-        "share": 0.107
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "share": 0.052
       },
       {
         "state": "narrow_front_two_buildup",
@@ -463,63 +830,63 @@
         "share": 0.0
       },
       {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
         "state": "central_progression",
         "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
         "count": 0,
         "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   },
-  "8": {
-    "home_team": "CF Real Blanco",
-    "away_team": "Celta Celeste",
-    "match_date": "2026-01-09 00:00:00",
-    "home_score": 1,
+  "3825572": {
+    "home_team": "Real Madrid",
+    "away_team": "Real Betis",
+    "match_date": "2015-08-29",
+    "home_score": 5,
     "away_score": 0,
     "states": [
       {
         "state": "opponent_high_press",
         "label": "opponent_high_press",
-        "count": 77,
-        "share": 0.885
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 10,
-        "share": 0.115
+        "count": 73,
+        "share": 0.422
       },
       {
         "state": "opponent_low_block",
         "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "count": 36,
+        "share": 0.208
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 26,
+        "share": 0.15
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 23,
+        "share": 0.133
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 15,
+        "share": 0.087
       },
       {
         "state": "narrow_front_two_buildup",
@@ -534,702 +901,63 @@
         "share": 0.0
       },
       {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
         "state": "central_progression",
         "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
         "count": 0,
         "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   },
-  "9": {
-    "home_team": "CF Real Blanco",
-    "away_team": "Getafe Azulon",
-    "match_date": "2026-01-10 00:00:00",
-    "home_score": 2,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 72,
-        "share": 0.911
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 7,
-        "share": 0.089
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "10": {
-    "home_team": "Atletico Verde",
-    "away_team": "FC Azul Marino",
-    "match_date": "2026-01-11 00:00:00",
-    "home_score": 0,
-    "away_score": 1,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 67,
-        "share": 0.918
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 6,
-        "share": 0.082
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "11": {
-    "home_team": "Atletico Verde",
-    "away_team": "Sevilla Roja",
-    "match_date": "2026-01-12 00:00:00",
-    "home_score": 0,
-    "away_score": 1,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 69,
-        "share": 0.885
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 9,
-        "share": 0.115
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "12": {
-    "home_team": "Atletico Verde",
-    "away_team": "Valencia Naranja",
-    "match_date": "2026-01-13 00:00:00",
-    "home_score": 0,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 70,
-        "share": 0.886
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 9,
-        "share": 0.114
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "13": {
-    "home_team": "Atletico Verde",
-    "away_team": "Betis Verdiblanco",
-    "match_date": "2026-01-14 00:00:00",
-    "home_score": 0,
-    "away_score": 1,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 70,
-        "share": 0.909
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 7,
-        "share": 0.091
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "14": {
-    "home_team": "Atletico Verde",
-    "away_team": "Villarreal Amarillo",
-    "match_date": "2026-01-15 00:00:00",
-    "home_score": 0,
-    "away_score": 1,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 71,
-        "share": 0.877
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 10,
-        "share": 0.123
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "15": {
-    "home_team": "Atletico Verde",
-    "away_team": "Sociedad Txuri",
-    "match_date": "2026-01-16 00:00:00",
-    "home_score": 0,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 61,
-        "share": 0.847
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 11,
-        "share": 0.153
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "16": {
-    "home_team": "Atletico Verde",
-    "away_team": "Celta Celeste",
-    "match_date": "2026-01-17 00:00:00",
-    "home_score": 0,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 71,
-        "share": 0.899
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 8,
-        "share": 0.101
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "17": {
-    "home_team": "Atletico Verde",
-    "away_team": "Getafe Azulon",
-    "match_date": "2026-01-18 00:00:00",
-    "home_score": 0,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 68,
-        "share": 0.919
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 6,
-        "share": 0.081
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "18": {
-    "home_team": "FC Azul Marino",
-    "away_team": "Sevilla Roja",
-    "match_date": "2026-01-19 00:00:00",
+  "3825579": {
+    "home_team": "Sevilla",
+    "away_team": "Atl\u00e9tico Madrid",
+    "match_date": "2015-08-30",
     "home_score": 0,
     "away_score": 3,
     "states": [
       {
         "state": "opponent_high_press",
         "label": "opponent_high_press",
-        "count": 77,
-        "share": 0.865
+        "count": 99,
+        "share": 0.483
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 35,
+        "share": 0.171
       },
       {
         "state": "final_third_vs_compact_defence",
         "label": "final_third_vs_compact_defence",
+        "count": 33,
+        "share": 0.161
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 26,
+        "share": 0.127
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
         "count": 12,
-        "share": 0.135
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "share": 0.059
       },
       {
         "state": "narrow_front_two_buildup",
@@ -1244,63 +972,63 @@
         "share": 0.0
       },
       {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
         "state": "central_progression",
         "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
         "count": 0,
         "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   },
-  "19": {
-    "home_team": "FC Azul Marino",
-    "away_team": "Valencia Naranja",
-    "match_date": "2026-01-20 00:00:00",
+  "3825581": {
+    "home_team": "Espanyol",
+    "away_team": "Real Madrid",
+    "match_date": "2015-09-12",
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 6,
     "states": [
       {
         "state": "opponent_high_press",
         "label": "opponent_high_press",
-        "count": 72,
-        "share": 0.911
+        "count": 71,
+        "share": 0.41
       },
       {
         "state": "final_third_vs_compact_defence",
         "label": "final_third_vs_compact_defence",
-        "count": 7,
-        "share": 0.089
+        "count": 42,
+        "share": 0.243
       },
       {
         "state": "opponent_low_block",
         "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "count": 31,
+        "share": 0.179
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 24,
+        "share": 0.139
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 5,
+        "share": 0.029
       },
       {
         "state": "narrow_front_two_buildup",
@@ -1315,205 +1043,63 @@
         "share": 0.0
       },
       {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
         "state": "central_progression",
         "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
         "count": 0,
         "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   },
-  "20": {
-    "home_team": "FC Azul Marino",
-    "away_team": "Betis Verdiblanco",
-    "match_date": "2026-01-21 00:00:00",
-    "home_score": 3,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 81,
-        "share": 0.931
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 6,
-        "share": 0.069
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "21": {
-    "home_team": "FC Azul Marino",
-    "away_team": "Villarreal Amarillo",
-    "match_date": "2026-01-22 00:00:00",
-    "home_score": 0,
-    "away_score": 0,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 87,
-        "share": 0.906
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 9,
-        "share": 0.094
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "22": {
-    "home_team": "FC Azul Marino",
-    "away_team": "Sociedad Txuri",
-    "match_date": "2026-01-23 00:00:00",
+  "3825590": {
+    "home_team": "Real Madrid",
+    "away_team": "Granada",
+    "match_date": "2015-09-19",
     "home_score": 1,
     "away_score": 0,
     "states": [
       {
         "state": "opponent_high_press",
         "label": "opponent_high_press",
-        "count": 74,
-        "share": 0.902
+        "count": 95,
+        "share": 0.477
       },
       {
         "state": "final_third_vs_compact_defence",
         "label": "final_third_vs_compact_defence",
-        "count": 8,
-        "share": 0.098
+        "count": 38,
+        "share": 0.191
       },
       {
         "state": "opponent_low_block",
         "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "count": 28,
+        "share": 0.141
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 28,
+        "share": 0.141
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 10,
+        "share": 0.05
       },
       {
         "state": "narrow_front_two_buildup",
@@ -1528,8 +1114,73 @@
         "share": 0.0
       },
       {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825593": {
+    "home_team": "Eibar",
+    "away_team": "Atl\u00e9tico Madrid",
+    "match_date": "2015-09-19",
+    "home_score": 0,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 115,
+        "share": 0.567
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 31,
+        "share": 0.153
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 31,
+        "share": 0.153
+      },
+      {
         "state": "wide_overload",
         "label": "wide_overload",
+        "count": 18,
+        "share": 0.089
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 8,
+        "share": 0.039
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
         "count": 0,
         "share": 0.0
       },
@@ -1538,53 +1189,1621 @@
         "label": "central_progression",
         "count": 0,
         "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825598": {
+    "home_team": "Atl\u00e9tico Madrid",
+    "away_team": "Getafe",
+    "match_date": "2015-09-22",
+    "home_score": 2,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 88,
+        "share": 0.497
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 31,
+        "share": 0.175
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 31,
+        "share": 0.175
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 18,
+        "share": 0.102
       },
       {
         "state": "neutral_buildup",
         "label": "neutral_buildup",
+        "count": 9,
+        "share": 0.051
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
         "count": 0,
         "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   },
-  "23": {
-    "home_team": "FC Azul Marino",
-    "away_team": "Celta Celeste",
-    "match_date": "2026-01-24 00:00:00",
+  "3825602": {
+    "home_team": "Athletic Club",
+    "away_team": "Real Madrid",
+    "match_date": "2015-09-23",
+    "home_score": 1,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 83,
+        "share": 0.456
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 34,
+        "share": 0.187
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 31,
+        "share": 0.17
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 24,
+        "share": 0.132
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 10,
+        "share": 0.055
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825606": {
+    "home_team": "Real Madrid",
+    "away_team": "M\u00e1laga",
+    "match_date": "2015-09-26",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 91,
+        "share": 0.448
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 36,
+        "share": 0.177
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 34,
+        "share": 0.167
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 22,
+        "share": 0.108
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 20,
+        "share": 0.099
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825607": {
+    "home_team": "Villarreal",
+    "away_team": "Atl\u00e9tico Madrid",
+    "match_date": "2015-09-26",
+    "home_score": 1,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 103,
+        "share": 0.526
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 30,
+        "share": 0.153
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 29,
+        "share": 0.148
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 24,
+        "share": 0.122
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 10,
+        "share": 0.051
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825617": {
+    "home_team": "Sevilla",
+    "away_team": "Barcelona",
+    "match_date": "2015-10-03",
+    "home_score": 2,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 104,
+        "share": 0.475
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 37,
+        "share": 0.169
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 29,
+        "share": 0.132
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 25,
+        "share": 0.114
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 24,
+        "share": 0.11
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825621": {
+    "home_team": "Atl\u00e9tico Madrid",
+    "away_team": "Real Madrid",
+    "match_date": "2015-10-04",
+    "home_score": 1,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 85,
+        "share": 0.447
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 36,
+        "share": 0.189
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 33,
+        "share": 0.174
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 29,
+        "share": 0.153
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 7,
+        "share": 0.037
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825625": {
+    "home_team": "Real Madrid",
+    "away_team": "Levante UD",
+    "match_date": "2015-10-17",
+    "home_score": 3,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 88,
+        "share": 0.451
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 42,
+        "share": 0.215
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 35,
+        "share": 0.179
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 17,
+        "share": 0.087
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 13,
+        "share": 0.067
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825627": {
+    "home_team": "Barcelona",
+    "away_team": "Rayo Vallecano",
+    "match_date": "2015-10-17",
+    "home_score": 5,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 105,
+        "share": 0.491
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 34,
+        "share": 0.159
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 33,
+        "share": 0.154
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 32,
+        "share": 0.15
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 10,
+        "share": 0.047
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825631": {
+    "home_team": "Real Sociedad",
+    "away_team": "Atl\u00e9tico Madrid",
+    "match_date": "2015-10-18",
+    "home_score": 0,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 87,
+        "share": 0.47
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 36,
+        "share": 0.195
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 30,
+        "share": 0.162
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 20,
+        "share": 0.108
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 12,
+        "share": 0.065
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825635": {
+    "home_team": "Celta Vigo",
+    "away_team": "Real Madrid",
+    "match_date": "2015-10-24",
+    "home_score": 1,
+    "away_score": 3,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 87,
+        "share": 0.458
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 34,
+        "share": 0.179
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 28,
+        "share": 0.147
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 26,
+        "share": 0.137
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 15,
+        "share": 0.079
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825637": {
+    "home_team": "Barcelona",
+    "away_team": "Eibar",
+    "match_date": "2015-10-25",
+    "home_score": 3,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 108,
+        "share": 0.507
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 38,
+        "share": 0.178
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 26,
+        "share": 0.122
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 22,
+        "share": 0.103
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 19,
+        "share": 0.089
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825638": {
+    "home_team": "Atl\u00e9tico Madrid",
+    "away_team": "Valencia",
+    "match_date": "2015-10-25",
+    "home_score": 2,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 105,
+        "share": 0.507
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 32,
+        "share": 0.155
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 30,
+        "share": 0.145
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 27,
+        "share": 0.13
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 13,
+        "share": 0.063
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825642": {
+    "home_team": "RC Deportivo La Coru\u00f1a",
+    "away_team": "Atl\u00e9tico Madrid",
+    "match_date": "2015-10-30",
+    "home_score": 1,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 79,
+        "share": 0.467
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 28,
+        "share": 0.166
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 26,
+        "share": 0.154
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 25,
+        "share": 0.148
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 11,
+        "share": 0.065
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825643": {
+    "home_team": "Real Madrid",
+    "away_team": "Las Palmas",
+    "match_date": "2015-10-31",
+    "home_score": 3,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 89,
+        "share": 0.459
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 38,
+        "share": 0.196
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 29,
+        "share": 0.149
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 25,
+        "share": 0.129
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 13,
+        "share": 0.067
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825645": {
+    "home_team": "Getafe",
+    "away_team": "Barcelona",
+    "match_date": "2015-10-31",
+    "home_score": 0,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 90,
+        "share": 0.474
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 48,
+        "share": 0.253
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 27,
+        "share": 0.142
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 15,
+        "share": 0.079
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 10,
+        "share": 0.053
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825658": {
+    "home_team": "Atl\u00e9tico Madrid",
+    "away_team": "Sporting Gij\u00f3n",
+    "match_date": "2015-11-08",
+    "home_score": 1,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 89,
+        "share": 0.484
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 31,
+        "share": 0.168
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 30,
+        "share": 0.163
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 22,
+        "share": 0.12
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 12,
+        "share": 0.065
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825660": {
+    "home_team": "Barcelona",
+    "away_team": "Villarreal",
+    "match_date": "2015-11-08",
+    "home_score": 3,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 91,
+        "share": 0.479
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 39,
+        "share": 0.205
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 25,
+        "share": 0.132
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 23,
+        "share": 0.121
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 12,
+        "share": 0.063
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825661": {
+    "home_team": "Sevilla",
+    "away_team": "Real Madrid",
+    "match_date": "2015-11-08",
+    "home_score": 3,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 78,
+        "share": 0.443
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 41,
+        "share": 0.233
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 24,
+        "share": 0.136
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 24,
+        "share": 0.136
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 9,
+        "share": 0.051
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825666": {
+    "home_team": "Real Betis",
+    "away_team": "Atl\u00e9tico Madrid",
+    "match_date": "2015-11-22",
     "home_score": 0,
     "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 89,
+        "share": 0.454
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 36,
+        "share": 0.184
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 34,
+        "share": 0.173
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 27,
+        "share": 0.138
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 10,
+        "share": 0.051
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825674": {
+    "home_team": "Atl\u00e9tico Madrid",
+    "away_team": "Espanyol",
+    "match_date": "2015-11-28",
+    "home_score": 1,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 107,
+        "share": 0.505
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 32,
+        "share": 0.151
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 29,
+        "share": 0.137
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 26,
+        "share": 0.123
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 18,
+        "share": 0.085
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825678": {
+    "home_team": "Eibar",
+    "away_team": "Real Madrid",
+    "match_date": "2015-11-29",
+    "home_score": 0,
+    "away_score": 2,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 111,
+        "share": 0.502
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 33,
+        "share": 0.149
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 30,
+        "share": 0.136
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 28,
+        "share": 0.127
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 19,
+        "share": 0.086
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825681": {
+    "home_team": "Real Madrid",
+    "away_team": "Getafe",
+    "match_date": "2015-12-05",
+    "home_score": 4,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 79,
+        "share": 0.418
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 42,
+        "share": 0.222
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 32,
+        "share": 0.169
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 21,
+        "share": 0.111
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 15,
+        "share": 0.079
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
+      "ci": [
+        0.013637211135675571,
+        0.01969623745254737
+      ],
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
+    }
+  },
+  "3825682": {
+    "home_team": "Granada",
+    "away_team": "Atl\u00e9tico Madrid",
+    "match_date": "2015-12-05",
+    "home_score": 0,
+    "away_score": 2,
     "states": [
       {
         "state": "opponent_high_press",
         "label": "opponent_high_press",
         "count": 82,
-        "share": 0.872
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 12,
-        "share": 0.128
+        "share": 0.446
       },
       {
         "state": "opponent_low_block",
         "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
+        "count": 33,
+        "share": 0.179
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 32,
+        "share": 0.174
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 28,
+        "share": 0.152
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 9,
+        "share": 0.049
       },
       {
         "state": "narrow_front_two_buildup",
@@ -1599,108 +2818,25 @@
         "share": 0.0
       },
       {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
         "state": "central_progression",
         "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
         "count": 0,
         "share": 0.0
       }
     ],
     "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
+      "tactical_state": "neutral_buildup",
+      "strategy": "s_mid_block_retreat",
+      "uplift": 0.01624298013001025,
       "ci": [
-        0.00907861694629869,
-        0.012789647130401706
+        0.013637211135675571,
+        0.01969623745254737
       ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
-    }
-  },
-  "24": {
-    "home_team": "FC Azul Marino",
-    "away_team": "Getafe Azulon",
-    "match_date": "2026-01-25 00:00:00",
-    "home_score": 0,
-    "away_score": 1,
-    "states": [
-      {
-        "state": "opponent_high_press",
-        "label": "opponent_high_press",
-        "count": 70,
-        "share": 0.875
-      },
-      {
-        "state": "final_third_vs_compact_defence",
-        "label": "final_third_vs_compact_defence",
-        "count": 10,
-        "share": 0.125
-      },
-      {
-        "state": "opponent_low_block",
-        "label": "opponent_low_block",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "narrow_front_two_buildup",
-        "label": "narrow_front_two_buildup",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "defensive_transition_after_loss",
-        "label": "defensive_transition_after_loss",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "wide_overload",
-        "label": "wide_overload",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "central_progression",
-        "label": "central_progression",
-        "count": 0,
-        "share": 0.0
-      },
-      {
-        "state": "neutral_buildup",
-        "label": "neutral_buildup",
-        "count": 0,
-        "share": 0.0
-      }
-    ],
-    "overall_recommendation": {
-      "tactical_state": "opponent_high_press",
-      "strategy": "s_third_man_combination",
-      "uplift": 0.011008491780848605,
-      "ci": [
-        0.00907861694629869,
-        0.012789647130401706
-      ],
-      "confidence": "high",
-      "n_sequences": 1007,
-      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
-      "execution": "Pattern - rehearsed combinations between three players.",
-      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+      "confidence": "medium",
+      "n_sequences": 311,
+      "risk": "Concedes territorial control and gives the opponent uncontested build-up.",
+      "execution": "Structural - repositioning below the ball at the moment of loss.",
+      "text": "Against **Neutral build-up / rest state**, adopting **s mid block retreat** historically created **+0.016 expected possession value per possession** (95% CI [+0.014, +0.020]) with **medium confidence**, based on 311 comparable sequences."
     }
   }
 }

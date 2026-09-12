@@ -1,10 +1,10 @@
 {
-  "train": 14,
-  "val": 5,
-  "test": 5,
+  "train": 24,
+  "val": 8,
+  "test": 8,
   "n_possessions": {
-    "train": 1123,
-    "val": 393,
-    "test": 439
+    "train": 4542,
+    "val": 1509,
+    "test": 1531
   }
 }
