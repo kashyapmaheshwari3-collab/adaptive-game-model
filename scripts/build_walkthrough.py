@@ -15,6 +15,8 @@ def files() -> list[Path]:
     for path in ROOT.rglob("*"):
         if not path.is_file() or any(part in EXCLUDED for part in path.parts):
             continue
+        if "data" in path.parts or "reports" in path.parts or "visuals" in path.parts:
+            continue
         if path.name == "WALKTHROUGH.md":
             continue
         if path.suffix.lower() in INCLUDED_SUFFIXES or path.name == "Dockerfile":
