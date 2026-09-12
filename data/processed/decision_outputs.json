@@ -1,0 +1,1706 @@
+{
+  "1": {
+    "home_team": "CF Real Blanco",
+    "away_team": "Atletico Verde",
+    "match_date": "2026-01-02 00:00:00",
+    "home_score": 0,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 67,
+        "share": 0.905
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 7,
+        "share": 0.095
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "2": {
+    "home_team": "CF Real Blanco",
+    "away_team": "FC Azul Marino",
+    "match_date": "2026-01-03 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 84,
+        "share": 0.944
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 5,
+        "share": 0.056
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "3": {
+    "home_team": "CF Real Blanco",
+    "away_team": "Sevilla Roja",
+    "match_date": "2026-01-04 00:00:00",
+    "home_score": 1,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 71,
+        "share": 0.91
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 7,
+        "share": 0.09
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "4": {
+    "home_team": "CF Real Blanco",
+    "away_team": "Valencia Naranja",
+    "match_date": "2026-01-05 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 73,
+        "share": 0.88
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 10,
+        "share": 0.12
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "5": {
+    "home_team": "CF Real Blanco",
+    "away_team": "Betis Verdiblanco",
+    "match_date": "2026-01-06 00:00:00",
+    "home_score": 1,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 74,
+        "share": 0.914
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 7,
+        "share": 0.086
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "6": {
+    "home_team": "CF Real Blanco",
+    "away_team": "Villarreal Amarillo",
+    "match_date": "2026-01-07 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 67,
+        "share": 0.838
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 13,
+        "share": 0.163
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "7": {
+    "home_team": "CF Real Blanco",
+    "away_team": "Sociedad Txuri",
+    "match_date": "2026-01-08 00:00:00",
+    "home_score": 1,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 75,
+        "share": 0.893
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 9,
+        "share": 0.107
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "8": {
+    "home_team": "CF Real Blanco",
+    "away_team": "Celta Celeste",
+    "match_date": "2026-01-09 00:00:00",
+    "home_score": 1,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 77,
+        "share": 0.885
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 10,
+        "share": 0.115
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "9": {
+    "home_team": "CF Real Blanco",
+    "away_team": "Getafe Azulon",
+    "match_date": "2026-01-10 00:00:00",
+    "home_score": 2,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 72,
+        "share": 0.911
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 7,
+        "share": 0.089
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "10": {
+    "home_team": "Atletico Verde",
+    "away_team": "FC Azul Marino",
+    "match_date": "2026-01-11 00:00:00",
+    "home_score": 0,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 67,
+        "share": 0.918
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 6,
+        "share": 0.082
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "11": {
+    "home_team": "Atletico Verde",
+    "away_team": "Sevilla Roja",
+    "match_date": "2026-01-12 00:00:00",
+    "home_score": 0,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 69,
+        "share": 0.885
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 9,
+        "share": 0.115
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "12": {
+    "home_team": "Atletico Verde",
+    "away_team": "Valencia Naranja",
+    "match_date": "2026-01-13 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 70,
+        "share": 0.886
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 9,
+        "share": 0.114
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "13": {
+    "home_team": "Atletico Verde",
+    "away_team": "Betis Verdiblanco",
+    "match_date": "2026-01-14 00:00:00",
+    "home_score": 0,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 70,
+        "share": 0.909
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 7,
+        "share": 0.091
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "14": {
+    "home_team": "Atletico Verde",
+    "away_team": "Villarreal Amarillo",
+    "match_date": "2026-01-15 00:00:00",
+    "home_score": 0,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 71,
+        "share": 0.877
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 10,
+        "share": 0.123
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "15": {
+    "home_team": "Atletico Verde",
+    "away_team": "Sociedad Txuri",
+    "match_date": "2026-01-16 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 61,
+        "share": 0.847
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 11,
+        "share": 0.153
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "16": {
+    "home_team": "Atletico Verde",
+    "away_team": "Celta Celeste",
+    "match_date": "2026-01-17 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 71,
+        "share": 0.899
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 8,
+        "share": 0.101
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "17": {
+    "home_team": "Atletico Verde",
+    "away_team": "Getafe Azulon",
+    "match_date": "2026-01-18 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 68,
+        "share": 0.919
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 6,
+        "share": 0.081
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "18": {
+    "home_team": "FC Azul Marino",
+    "away_team": "Sevilla Roja",
+    "match_date": "2026-01-19 00:00:00",
+    "home_score": 0,
+    "away_score": 3,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 77,
+        "share": 0.865
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 12,
+        "share": 0.135
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "19": {
+    "home_team": "FC Azul Marino",
+    "away_team": "Valencia Naranja",
+    "match_date": "2026-01-20 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 72,
+        "share": 0.911
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 7,
+        "share": 0.089
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "20": {
+    "home_team": "FC Azul Marino",
+    "away_team": "Betis Verdiblanco",
+    "match_date": "2026-01-21 00:00:00",
+    "home_score": 3,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 81,
+        "share": 0.931
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 6,
+        "share": 0.069
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "21": {
+    "home_team": "FC Azul Marino",
+    "away_team": "Villarreal Amarillo",
+    "match_date": "2026-01-22 00:00:00",
+    "home_score": 0,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 87,
+        "share": 0.906
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 9,
+        "share": 0.094
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "22": {
+    "home_team": "FC Azul Marino",
+    "away_team": "Sociedad Txuri",
+    "match_date": "2026-01-23 00:00:00",
+    "home_score": 1,
+    "away_score": 0,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 74,
+        "share": 0.902
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 8,
+        "share": 0.098
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "23": {
+    "home_team": "FC Azul Marino",
+    "away_team": "Celta Celeste",
+    "match_date": "2026-01-24 00:00:00",
+    "home_score": 0,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 82,
+        "share": 0.872
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 12,
+        "share": 0.128
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  },
+  "24": {
+    "home_team": "FC Azul Marino",
+    "away_team": "Getafe Azulon",
+    "match_date": "2026-01-25 00:00:00",
+    "home_score": 0,
+    "away_score": 1,
+    "states": [
+      {
+        "state": "opponent_high_press",
+        "label": "opponent_high_press",
+        "count": 70,
+        "share": 0.875
+      },
+      {
+        "state": "final_third_vs_compact_defence",
+        "label": "final_third_vs_compact_defence",
+        "count": 10,
+        "share": 0.125
+      },
+      {
+        "state": "opponent_low_block",
+        "label": "opponent_low_block",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "narrow_front_two_buildup",
+        "label": "narrow_front_two_buildup",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "defensive_transition_after_loss",
+        "label": "defensive_transition_after_loss",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "wide_overload",
+        "label": "wide_overload",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "central_progression",
+        "label": "central_progression",
+        "count": 0,
+        "share": 0.0
+      },
+      {
+        "state": "neutral_buildup",
+        "label": "neutral_buildup",
+        "count": 0,
+        "share": 0.0
+      }
+    ],
+    "overall_recommendation": {
+      "tactical_state": "opponent_high_press",
+      "strategy": "s_third_man_combination",
+      "uplift": 0.011008491780848605,
+      "ci": [
+        0.00907861694629869,
+        0.012789647130401706
+      ],
+      "confidence": "high",
+      "n_sequences": 1007,
+      "risk": "Medium execution risk; combinations fail under intense pressure without strong first touches.",
+      "execution": "Pattern - rehearsed combinations between three players.",
+      "text": "Against **Opponent high press**, adopting **s third man combination** historically created **+0.011 expected possession value per possession** (95% CI [+0.009, +0.013]) with **high confidence**, based on 1007 comparable sequences."
+    }
+  }
+}

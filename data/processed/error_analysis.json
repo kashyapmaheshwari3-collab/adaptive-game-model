@@ -1,0 +1,93 @@
+{
+  "successes": [
+    {
+      "match_id": 24,
+      "possession": 11,
+      "team": "Getafe Azulon",
+      "opponent": "FC Azul Marino",
+      "state": "unknown",
+      "minute": 11,
+      "actual_epv": 0.0,
+      "pred_epv": 0.0,
+      "residual": 0.0,
+      "outcome_level": 0,
+      "explanation": "Model over-predicted value in unknown: possession was lost early despite an advantageous start position - opponent pressure in the specific sequence was higher than the aggregate context suggested."
+    },
+    {
+      "match_id": 20,
+      "possession": 29,
+      "team": "Betis Verdiblanco",
+      "opponent": "FC Azul Marino",
+      "state": "unknown",
+      "minute": 24,
+      "actual_epv": 0.0,
+      "pred_epv": 0.0,
+      "residual": 0.0,
+      "outcome_level": 0,
+      "explanation": "Model over-predicted value in unknown: possession was lost early despite an advantageous start position - opponent pressure in the specific sequence was higher than the aggregate context suggested."
+    },
+    {
+      "match_id": 22,
+      "possession": 11,
+      "team": "Sociedad Txuri",
+      "opponent": "FC Azul Marino",
+      "state": "unknown",
+      "minute": 13,
+      "actual_epv": 0.0,
+      "pred_epv": 0.0,
+      "residual": 0.0,
+      "outcome_level": 0,
+      "explanation": "Model over-predicted value in unknown: possession was lost early despite an advantageous start position - opponent pressure in the specific sequence was higher than the aggregate context suggested."
+    }
+  ],
+  "failures": [
+    {
+      "match_id": 21,
+      "possession": 47,
+      "team": "FC Azul Marino",
+      "opponent": "Villarreal Amarillo",
+      "state": "unknown",
+      "minute": 37,
+      "actual_epv": 0.13798,
+      "pred_epv": 0.011416138613861386,
+      "residual": 0.1265638613861386,
+      "outcome_level": 3,
+      "explanation": "Model under-predicted value in unknown: the possession created a dangerous action (shot assist / box entry) that the ex-ante features could not foresee.",
+      "failure_cause": "context mismatch",
+      "data_that_would_improve": "xT-style pitch control maps / tracking data for actual space opened"
+    },
+    {
+      "match_id": 24,
+      "possession": 16,
+      "team": "Getafe Azulon",
+      "opponent": "FC Azul Marino",
+      "state": "unknown",
+      "minute": 15,
+      "actual_epv": 0.11086,
+      "pred_epv": 0.009458767123287672,
+      "residual": 0.10140123287671232,
+      "outcome_level": 3,
+      "explanation": "Model under-predicted value in unknown: the possession created a dangerous action (shot assist / box entry) that the ex-ante features could not foresee.",
+      "failure_cause": "context mismatch",
+      "data_that_would_improve": "xT-style pitch control maps / tracking data for actual space opened"
+    },
+    {
+      "match_id": 22,
+      "possession": 28,
+      "team": "FC Azul Marino",
+      "opponent": "Sociedad Txuri",
+      "state": "unknown",
+      "minute": 31,
+      "actual_epv": 0.11215,
+      "pred_epv": 0.011416138613861386,
+      "residual": 0.10073386138613862,
+      "outcome_level": 3,
+      "explanation": "Model under-predicted value in unknown: the possession created a dangerous action (shot assist / box entry) that the ex-ante features could not foresee.",
+      "failure_cause": "context mismatch",
+      "data_that_would_improve": "xT-style pitch control maps / tracking data for actual space opened"
+    }
+  ],
+  "n_test": 439,
+  "median_abs_resid": 0.013156785714285718,
+  "p90_abs_resid": 0.041185330343503176
+}

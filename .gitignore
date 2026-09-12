@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Project data (raw event data is large; fetched by scripts/download_data.py)
+# The data itself is StatsBomb Open Data (CC BY-NC-SA 4.0) - see data/raw/README.md
+data/raw/statsbomb/
+!data/raw/statsbomb/README.md
+!data/raw/statsbomb/LICENSE.txt
+
+# Runtime artifacts
+*.log
+streamlit_app_data/
+
+# Large generated media (regenerable via scripts)
+visuals/cards/*.png
+visuals/demo.gif

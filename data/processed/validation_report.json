@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "n_errors": 0,
+  "n_warnings": 0,
+  "n_checks": 8,
+  "issues": [
+    {
+      "check": "duplicate_events",
+      "severity": "info",
+      "count": 0,
+      "message": "No duplicate events"
+    },
+    {
+      "check": "impossible_coordinates",
+      "severity": "info",
+      "count": 0,
+      "message": "All coordinates within pitch"
+    },
+    {
+      "check": "missing_player_ids",
+      "severity": "info",
+      "count": 0,
+      "message": "0/6906 on-ball events lack player_id (0.0%)"
+    },
+    {
+      "check": "invalid_timestamps",
+      "severity": "info",
+      "count": 0,
+      "message": "All timestamps valid"
+    },
+    {
+      "check": "team_name_consistency",
+      "severity": "info",
+      "count": 0,
+      "message": "Team names consistent with manifest"
+    },
+    {
+      "check": "competition_mismatch",
+      "severity": "info",
+      "count": 0,
+      "message": "All events map to manifest matches"
+    },
+    {
+      "check": "outliers",
+      "severity": "info",
+      "count": 0,
+      "message": "No outlier values flagged"
+    },
+    {
+      "check": "leakage",
+      "severity": "info",
+      "count": 0,
+      "message": "No match-level leakage between train and test"
+    }
+  ],
+  "rows_in": 7952,
+  "matches": 24,
+  "generated_at": "2026-09-12T18:49:15.875818+00:00"
+}

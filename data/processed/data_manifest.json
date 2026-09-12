@@ -1,0 +1,18 @@
+{
+  "competition_id": 11,
+  "season_id": 27,
+  "source": "https://github.com/statsbomb/open-data",
+  "license": "CC BY-NC-SA 4.0 (StatsBomb Open Data)",
+  "n_matches": 24,
+  "n_events": 7952,
+  "n_teams": 3,
+  "match_date_range": [
+    "2026-01-02 00:00:00",
+    "2026-01-25 00:00:00"
+  ],
+  "generated_at": "2026-09-12T18:48:51.158382+00:00",
+  "provenance": {
+    "data_source": "synthetic",
+    "note": "offline/CI fallback generator"
+  }
+}
