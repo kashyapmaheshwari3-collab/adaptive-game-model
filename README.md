@@ -102,6 +102,10 @@ raw data -> validation -> cleaning -> event standardisation
 > a plain-language guide for analysts/coaches with what to download, what to
 > install, and how to run everything in ~15 minutes. Deployment details are in
 > [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
+>
+> **Evaluating this project?** Data, results, and how they were produced:
+> [`docs/DATA_PROVENANCE.md`](docs/DATA_PROVENANCE.md). What it does, doesn't do,
+> and who should use it: [`docs/PROJECT_SCOPE.md`](docs/PROJECT_SCOPE.md).
 
 ```bash
 # 1. Clone / unzip

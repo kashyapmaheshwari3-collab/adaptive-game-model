@@ -2,7 +2,10 @@
 
 import streamlit as st
 
-from app.utils import load_artefacts
+try:
+    from app.utils import load_artefacts
+except ModuleNotFoundError:
+    from utils import load_artefacts
 from src.config import ADJUSTMENT_LABELS, STATE_LABELS
 
 st.set_page_config(page_title="Recommendations", page_icon="🎯", layout="wide")

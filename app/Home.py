@@ -6,7 +6,10 @@ key results, and where to go next.
 
 import streamlit as st
 
-from app.utils import load_artefacts
+try:
+    from app.utils import load_artefacts
+except ModuleNotFoundError:
+    from utils import load_artefacts
 
 st.set_page_config(page_title="Adaptive Game Model", page_icon="⚽", layout="wide")
 

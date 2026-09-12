@@ -7,7 +7,10 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from app.utils import load_artefacts
+try:
+    from app.utils import load_artefacts
+except ModuleNotFoundError:
+    from utils import load_artefacts
 from src.config import HITL_LOG, PROCESSED_DIR
 
 st.set_page_config(page_title="Human-in-the-Loop", page_icon="🧠", layout="wide")
