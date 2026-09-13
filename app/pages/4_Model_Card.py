@@ -17,7 +17,7 @@ mc = a["model_card"]
 c1, c2 = st.columns(2)
 with c1:
     st.subheader("Model")
-    st.json(mc.get("value_model"))
+    st.write(mc.get("value_model"))
 with c2:
     st.subheader("Task")
     st.write(mc.get("task"))

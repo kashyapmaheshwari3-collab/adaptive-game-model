@@ -1,7 +1,0 @@
-{
-  "deploy": {
-    "type": "fullstack",
-    "rootDir": ".",
-    "appPort": 8080
-  }
-}
