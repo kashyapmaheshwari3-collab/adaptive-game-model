@@ -194,6 +194,9 @@ The repository includes everything a platform needs: `pyproject.toml`,
 
 ## Contact
 
-Your Name — your@email.com — [linkedin.com/in/your-handle](https://linkedin.com/in/your-handle)
+**Kashyap Maheshwari** — [Kashyap.maheshwari3@gmail.com](mailto:Kashyap.maheshwari3@gmail.com)  
+[LinkedIn](https://www.linkedin.com/in/kashyap-maheshwari-02469b85/) · [X](https://www.x.com/AbhisheK2M96) · [Live dashboard](https://football-project-1-u1bbf3e.verdent.app)  
+
+**Project repository:** [github.com/kashyapmaheshwari3-collab/adaptive-game-model](https://github.com/kashyapmaheshwari3-collab/adaptive-game-model)
 
 _Positioning: I build decision-intelligence systems for football — event data to counterfactual adjustment value, with the uncertainty a coaching staff can actually trust._
