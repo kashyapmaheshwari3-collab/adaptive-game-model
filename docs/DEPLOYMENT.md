@@ -1,10 +1,10 @@
-# Deployment Guide — live web app in two platforms
+# Deployment Guide — publish the dashboard
 
 The dashboard is a standard Streamlit multi-page app (`app/Home.py` + `app/pages/`).
 It reads pre-computed artefacts from `data/processed/`, so a deployed app
 renders instantly without running the training pipeline.
 
-## Option A — Streamlit Community Cloud (recommended, zero config)
+## Option A — Streamlit Community Cloud (recommended)
 
 1. Push this repository to GitHub (`main` branch).
 2. Go to https://streamlit.io/cloud and sign in with GitHub.
@@ -14,6 +14,7 @@ renders instantly without running the training pipeline.
 4. Click **Deploy**. Streamlit reads `requirements.txt` and `.streamlit/config.toml`
    automatically. Deployment takes ~2-4 minutes.
 5. Your app is live at `https://<app-name>.streamlit.app`.
+6. Copy that URL into the README's Contact section as the current demo link.
 
 Notes:
 - `data/processed/*.parquet/json/csv` are committed so the app has instant data.
@@ -24,16 +25,19 @@ Notes:
 
 1. Create an account at https://huggingface.co.
 2. **New Space** → SDK: **Streamlit** → name it, public or private → create.
-3. In the Space, upload the repository files (or push with git):
+3. In the Space, upload the repository files (or push with git). Replace
+   `<your-username>` and `<your-space-name>` with the values you actually
+   choose:
    ```
-   git clone https://huggingface.co/spaces/<user>/<space>
+   git clone https://huggingface.co/spaces/<your-username>/<your-space-name>
    # copy the project files in
    git add . && git commit -m "Adaptive Game Model" && git push
    ```
 4. HF Spaces auto-installs `requirements.txt` and runs `app/Home.py`
    (Spaces run `streamlit run app/Home.py` by default for Streamlit SDK spaces;
    if your Space uses a different entry file, set it in Settings).
-5. Live at `https://huggingface.co/spaces/<user>/<space>`.
+5. The live URL is
+   `https://huggingface.co/spaces/<your-username>/<your-space-name>`.
 
 ## Option C — Render / any Docker host
 

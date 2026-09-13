@@ -145,16 +145,25 @@ docker build -t adaptive-game-model .     # containerised dashboard
 docker run -p 8501:8501 adaptive-game-model
 ```
 
-## Live deployment
+## Demo and deployment
 
-Two clicks to production — see `docs/DEPLOYMENT.md` for the full guide:
+The current public demo is linked in the Contact section below. The application
+is a standard Streamlit multi-page app, so the same repository can be deployed
+to Streamlit Community Cloud, Hugging Face Spaces, or a Docker host without
+changing the modelling code. See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for
+the platform-specific steps and the checks I run before publishing.
 
-1. **Streamlit Community Cloud**: push the repo → streamlit.io/cloud → "New app" → `app/Home.py` → Deploy. Zero config (`.streamlit/config.toml` included).
-2. **Hugging Face Spaces**: create a Space (Streamlit SDK, Python 3.12) → push → your app is live at `huggingface.co/spaces/<user>/<space>`.
+The repository includes `pyproject.toml`, `requirements.txt`, `Dockerfile`,
+`.streamlit/config.toml`, and pre-computed `data/processed` artefacts so a
+deployed dashboard can render immediately before a fresh pipeline run.
 
-The repository includes everything a platform needs: `pyproject.toml`,
-`requirements.txt`, `Dockerfile`, and pre-computed `data/processed` artefacts
-(so a deployed app renders immediately even before the pipeline runs).
+## My engineering decisions
+
+This is a decision-support prototype, so I prioritised a defensible football
+ontology, chronological validation, calibration, uncertainty, and readable
+coach-facing outputs over a larger or less interpretable model. The reasoning
+behind those choices is documented in
+[`docs/DESIGN_DECISIONS.md`](docs/DESIGN_DECISIONS.md).
 
 ## Validation summary (honest numbers)
 
@@ -191,6 +200,7 @@ The repository includes everything a platform needs: `pyproject.toml`,
 - [ ] Social media kit (5-card carousel + posting guide) — `docs/social_kit.md`, `visuals/cards/`
 - [ ] Demo GIF — `visuals/demo.gif`
 - [ ] README with problem statement, novelty verification, club-ready deployment notes
+- [ ] [Design decisions and module walkthrough](docs/DESIGN_DECISIONS.md)
 
 ## Contact
 
