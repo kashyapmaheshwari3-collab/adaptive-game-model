@@ -10,6 +10,8 @@ on:
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
     strategy:
       matrix:
         python-version: ["3.12"]
