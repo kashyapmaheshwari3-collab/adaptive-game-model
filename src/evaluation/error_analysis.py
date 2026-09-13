@@ -61,18 +61,29 @@ def error_analysis(test: pd.DataFrame, preds: np.ndarray) -> dict:
             "explanation": _explain(r, float(r["resid"]), "best"),
         }
 
-    best = [row_to_dict(df.iloc[i]) for i in range(min(3, len(df))) if df["abs_resid"].iloc[i] == df["abs_resid"].iloc[i]]
+    best = [
+        row_to_dict(df.iloc[i])
+        for i in range(min(3, len(df)))
+        if df["abs_resid"].iloc[i] == df["abs_resid"].iloc[i]
+    ]
     worst = df.sort_values("abs_resid", ascending=False)
     worst = [row_to_dict(worst.iloc[i]) for i in range(min(3, len(worst)))]
 
     failure_modes = []
     for r in worst:
-        cause = "rare high-variance event (shot) not captured ex-ante" if r["actual_epv"] > r["pred_epv"] and r["outcome_level"] >= 4 else (
-            "sterile possession over-valued" if r["actual_epv"] < r["pred_epv"] else "context mismatch")
+        cause = (
+            "rare high-variance event (shot) not captured ex-ante"
+            if r["actual_epv"] > r["pred_epv"] and r["outcome_level"] >= 4
+            else (
+                "sterile possession over-valued"
+                if r["actual_epv"] < r["pred_epv"]
+                else "context mismatch"
+            )
+        )
         missing_data = (
-            "opponent pressure intensity at each action (pressure events are partially captured)" 
-            if cause.startswith("rare") else
-            "xT-style pitch control maps / tracking data for actual space opened"
+            "opponent pressure intensity at each action (pressure events are partially captured)"
+            if cause.startswith("rare")
+            else "xT-style pitch control maps / tracking data for actual space opened"
         )
         r["failure_cause"] = cause
         r["data_that_would_improve"] = missing_data

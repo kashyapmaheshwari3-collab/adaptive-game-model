@@ -28,7 +28,8 @@ def _font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
     import matplotlib.font_manager as fm
 
     picks = [
-        f.fname for f in fm.fontManager.ttflist
+        f.fname
+        for f in fm.fontManager.ttflist
         if f.name == "DejaVu Sans" and (f.style.lower() == "bold") == bold
     ]
     if not picks:
@@ -75,7 +76,12 @@ def _render_card(header: str, kicker: str, body_lines: list[str], footer: str, o
     d.rectangle([70, y + 10, W - 70, y + 18], fill=PANEL)
 
     d.text((70, H - 120), footer, font=f_foot, fill=ACCENT)
-    d.text((70, H - 70), "@yourhandle  |  Adaptive Game Model  |  #FootballAnalytics", font=_font(24), fill=MUTED)
+    d.text(
+        (70, H - 70),
+        "@yourhandle  |  Adaptive Game Model  |  #FootballAnalytics",
+        font=_font(24),
+        fill=MUTED,
+    )
     img.save(out)
     print(f"  card -> {out.name}")
 
@@ -86,7 +92,7 @@ def render_social_cards(out_dir: Path = CARDS_DIR) -> list[Path]:
     ev = json.load(open(PROCESSED_DIR / "evaluation_report.json", encoding="utf-8"))
     recs = pd.read_csv(PROCESSED_DIR / "recommendations.csv")
     states = pd.read_csv(PROCESSED_DIR / "state_profiles.csv")
-    poss = pd.read_parquet(PROCESSED_DIR / "possessions.parquet")
+    pd.read_parquet(PROCESSED_DIR / "possessions.parquet")
     matches = pd.read_parquet(PROCESSED_DIR / "matches.parquet")
     data_src = ev.get("data_source", "synthetic")
     rmse = ev.get("metrics", {}).get("xgboost_calibrated", {}).get("rmse", 0)
@@ -97,7 +103,7 @@ def render_social_cards(out_dir: Path = CARDS_DIR) -> list[Path]:
     top_state = states.sort_values("n", ascending=False).iloc[0]
     top_rec = recs.sort_values("aipw_ate", ascending=False).iloc[0] if not recs.empty else None
 
-    best_teams = sorted(matches["home_team"].dropna().unique().tolist())
+    sorted(matches["home_team"].dropna().unique().tolist())
     league = "La Liga 2015/16" if data_src == "statsbomb_open_data" else "Synthetic League"
 
     cards = []
@@ -174,7 +180,7 @@ def render_social_cards(out_dir: Path = CARDS_DIR) -> list[Path]:
         "Validated on the future, not the past",
         "WHY TRUST IT",
         [
-            f"Chronological split: model trained on earlier matches only.",
+            "Chronological split: model trained on earlier matches only.",
             f"Out-of-time RMSE {rmse:.4f} | calibration ECE {ece:.4f}",
             "Error analysis: 3 successes, 3 failures, and the data that would fix them.",
             "Human-in-the-loop: analyst notes, coach feedback, scout override.",

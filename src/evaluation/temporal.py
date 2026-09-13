@@ -45,6 +45,8 @@ def split_possessions(
     test = possessions[possessions["match_id"].isin(split["test"])].copy()
     report = {k: len(v) for k, v in split.items()}
     report["n_possessions"] = {
-        "train": len(train), "val": len(val), "test": len(test),
+        "train": len(train),
+        "val": len(val),
+        "test": len(test),
     }
     return train, val, test, report

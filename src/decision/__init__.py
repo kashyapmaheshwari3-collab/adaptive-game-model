@@ -1,11 +1,11 @@
 """Decision package - the "what should we change?" answer."""
 
-from .recommender import build_recommendations, recommendation_text, overall_recommendation
 from .coach_text import (
-    state_distribution_summary,
-    recommendation_card_text,
     example_opponent_report,
+    recommendation_card_text,
+    state_distribution_summary,
 )
+from .recommender import build_recommendations, overall_recommendation, recommendation_text
 
 __all__ = [
     "build_recommendations",

@@ -14,17 +14,17 @@ These checks run on every pipeline execution and gate the downstream stages:
 """
 
 from .checks import (
-    run_all_checks,
+    check_competition_match,
     check_duplicate_events,
     check_impossible_coordinates,
-    check_missing_player_ids,
     check_invalid_timestamps,
-    check_team_name_consistency,
-    check_competition_match,
-    check_outliers,
     check_leakage,
+    check_missing_player_ids,
+    check_outliers,
+    check_team_name_consistency,
+    run_all_checks,
 )
-from .report import validation_report, save_validation_report
+from .report import save_validation_report, validation_report
 
 __all__ = [
     "run_all_checks",

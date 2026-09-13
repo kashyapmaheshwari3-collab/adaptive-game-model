@@ -64,13 +64,17 @@ def _estimate_one(
 
     e_model = LogisticRegression(max_iter=1000, random_state=DEFAULT_RANDOM_STATE)
     e_model.fit(X, t)
-    e = np.clip(e_model.predict_proba(X)[:, 1], POSITIVITY_MIN_PROPENSITY, 1 - POSITIVITY_MIN_PROPENSITY)
+    e = np.clip(
+        e_model.predict_proba(X)[:, 1], POSITIVITY_MIN_PROPENSITY, 1 - POSITIVITY_MIN_PROPENSITY
+    )
     e_mean = e.mean()
 
     # IPW (stabilised) - ATE
     w_t = e_mean / e
     w_c = (1 - e_mean) / (1 - e)
-    ipw_ate = float((t * w_t * y).sum() / w_t[t == 1].sum() - ((1 - t) * w_c * y).sum() / w_c[t == 0].sum())
+    ipw_ate = float(
+        (t * w_t * y).sum() / w_t[t == 1].sum() - ((1 - t) * w_c * y).sum() / w_c[t == 0].sum()
+    )
 
     # Doubly robust (AIPW) - ATE
     om_covs = X.copy()
@@ -80,9 +84,7 @@ def _estimate_one(
     p1 = om.predict(om_covs.assign(_t=1))
     p0 = om.predict(om_covs.assign(_t=0))
     aipw_ate = float(
-        (p1 - p0).mean()
-        + (t * (y - p1) / e).mean()
-        - ((1 - t) * (y - p0) / (1 - e)).mean()
+        (p1 - p0).mean() + (t * (y - p1) / e).mean() - ((1 - t) * (y - p0) / (1 - e)).mean()
     )
 
     # Bootstrap by match (cluster-resampling preserves within-match correlation).
@@ -102,7 +104,11 @@ def _estimate_one(
             continue
         e_b_model = LogisticRegression(max_iter=1000, random_state=DEFAULT_RANDOM_STATE)
         e_b_model.fit(X_b, t_b)
-        e_b = np.clip(e_b_model.predict_proba(X_b)[:, 1], POSITIVITY_MIN_PROPENSITY, 1 - POSITIVITY_MIN_PROPENSITY)
+        e_b = np.clip(
+            e_b_model.predict_proba(X_b)[:, 1],
+            POSITIVITY_MIN_PROPENSITY,
+            1 - POSITIVITY_MIN_PROPENSITY,
+        )
         om_b = LinearRegression()
         om_b.fit(X_b.assign(_t=t_b), y_b)
         p1_b = om_b.predict(X_b.assign(_t=1))
@@ -209,4 +215,6 @@ def estimate_adjustment_values(
     if not rows:
         return pd.DataFrame()
     df = pd.DataFrame(rows)
-    return df.sort_values(["tactical_state", "aipw_ate"], ascending=[True, False]).reset_index(drop=True)
+    return df.sort_values(["tactical_state", "aipw_ate"], ascending=[True, False]).reset_index(
+        drop=True
+    )

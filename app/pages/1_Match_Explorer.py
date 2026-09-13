@@ -63,9 +63,21 @@ if not sub.empty:
     if not shots.empty:
         st.dataframe(
             shots[
-                ["possession", "possession_team", "opponent_team", "minute", "tactical_state",
-                 "outcome_level", "max_shot_xg", "epv", "start_x", "end_x"]
-            ].sort_values("max_shot_xg", ascending=False).head(20),
+                [
+                    "possession",
+                    "possession_team",
+                    "opponent_team",
+                    "minute",
+                    "tactical_state",
+                    "outcome_level",
+                    "max_shot_xg",
+                    "epv",
+                    "start_x",
+                    "end_x",
+                ]
+            ]
+            .sort_values("max_shot_xg", ascending=False)
+            .head(20),
             use_container_width=True,
         )
     else:

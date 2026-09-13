@@ -2,7 +2,6 @@
 
 import json
 import time
-from pathlib import Path
 
 import pandas as pd
 import streamlit as st
@@ -11,7 +10,7 @@ try:
     from app.utils import load_artefacts
 except ModuleNotFoundError:
     from utils import load_artefacts
-from src.config import HITL_LOG, PROCESSED_DIR
+from src.config import HITL_LOG
 
 st.set_page_config(page_title="Human-in-the-Loop", page_icon="🧠", layout="wide")
 st.title("Human-in-the-Loop")
@@ -44,8 +43,14 @@ options = [
 ]
 pick = st.selectbox("Recommendation", options)
 role = st.selectbox("Your role", ["Analyst", "Coach", "Scout", "Sporting Director"])
-feedback_type = st.selectbox("Type", ["Comment", "Override", "Confidence adjustment", "Tactical assumption", "Video evidence"])
-text = st.text_area("Feedback", placeholder="e.g. 'In our system this adjustment works only with a left-footed CB - see clip 4:12'")
+feedback_type = st.selectbox(
+    "Type",
+    ["Comment", "Override", "Confidence adjustment", "Tactical assumption", "Video evidence"],
+)
+text = st.text_area(
+    "Feedback",
+    placeholder="e.g. 'In our system this adjustment works only with a left-footed CB - see clip 4:12'",
+)
 
 if st.button("Save feedback", type="primary"):
     entries = _load_hitl()

@@ -31,8 +31,12 @@ def elo_ratings(matches: pd.DataFrame) -> pd.DataFrame:
         h, a = m["home_team_id"], m["away_team_id"]
         r_h = ratings.get(h, INIT)
         r_a = ratings.get(a, INIT)
-        rows.append({"match_id": m["match_id"], "team_id": h, "elo_before": r_h, "opponent_elo": r_a})
-        rows.append({"match_id": m["match_id"], "team_id": a, "elo_before": r_a, "opponent_elo": r_h})
+        rows.append(
+            {"match_id": m["match_id"], "team_id": h, "elo_before": r_h, "opponent_elo": r_a}
+        )
+        rows.append(
+            {"match_id": m["match_id"], "team_id": a, "elo_before": r_a, "opponent_elo": r_h}
+        )
 
         e_h = _expected(r_h + HOME_ADV, r_a)
         e_a = 1.0 - e_h
@@ -61,8 +65,12 @@ def elo_features(possessions: pd.DataFrame, matches: pd.DataFrame) -> pd.DataFra
         name_to_id[(m["match_id"], m["away_team"])] = m["away_team_id"]
         name_to_id[(m["match_id"], m["home_team_id"])] = m["home_team_id"]
 
-    df["team_id"] = df.apply(lambda r: name_to_id.get((r["match_id"], r["possession_team"])), axis=1)
-    df["opponent_id"] = df.apply(lambda r: name_to_id.get((r["match_id"], r["opponent_team"])), axis=1)
+    df["team_id"] = df.apply(
+        lambda r: name_to_id.get((r["match_id"], r["possession_team"])), axis=1
+    )
+    df["opponent_id"] = df.apply(
+        lambda r: name_to_id.get((r["match_id"], r["opponent_team"])), axis=1
+    )
     df["team_elo"] = df.apply(lambda r: by_team.get((r["match_id"], r["team_id"]), INIT), axis=1)
     df["opp_elo"] = df.apply(lambda r: by_opp.get((r["match_id"], r["opponent_id"]), INIT), axis=1)
     df["elo_diff"] = df["team_elo"] - df["opp_elo"]

@@ -1,8 +1,8 @@
 """Visualisation package - pitch plots, charts, architecture diagram, social cards."""
 
-from .pitch import plot_sequence, plot_state_heatmap, plot_calibration
-from .diagram import render_architecture_diagram
 from .cards import render_social_cards
+from .diagram import render_architecture_diagram
+from .pitch import plot_calibration, plot_sequence, plot_state_heatmap
 
 __all__ = [
     "plot_sequence",

@@ -10,7 +10,9 @@ from src.config import ADJUSTMENT_LABELS, STATE_LABELS
 
 st.set_page_config(page_title="Recommendations", page_icon="🎯", layout="wide")
 st.title("Tactical Adjustment Recommendations")
-st.caption("Every estimate carries its confidence interval, sample size, risk and execution requirement.")
+st.caption(
+    "Every estimate carries its confidence interval, sample size, risk and execution requirement."
+)
 
 a = load_artefacts()
 recs = a["recommendations"]
@@ -23,17 +25,32 @@ if recs.empty:
 st.dataframe(
     recs[
         [
-            "tactical_state", "strategy", "strategy_label", "aipw_ate",
-            "ci_low", "ci_high", "confidence", "n_treated", "n_control",
-            "overlap", "risk", "execution",
+            "tactical_state",
+            "strategy",
+            "strategy_label",
+            "aipw_ate",
+            "ci_low",
+            "ci_high",
+            "confidence",
+            "n_treated",
+            "n_control",
+            "overlap",
+            "risk",
+            "execution",
         ]
     ].rename(
         columns={
-            "tactical_state": "State", "strategy_label": "Adjustment",
-            "aipw_ate": "Uplift (EPV/possession)", "ci_low": "CI low",
-            "ci_high": "CI high", "confidence": "Confidence",
-            "n_treated": "Treated", "n_control": "Control",
-            "overlap": "Overlap", "risk": "Risk", "execution": "Execution",
+            "tactical_state": "State",
+            "strategy_label": "Adjustment",
+            "aipw_ate": "Uplift (EPV/possession)",
+            "ci_low": "CI low",
+            "ci_high": "CI high",
+            "confidence": "Confidence",
+            "n_treated": "Treated",
+            "n_control": "Control",
+            "overlap": "Overlap",
+            "risk": "Risk",
+            "execution": "Execution",
         }
     ),
     use_container_width=True,
@@ -55,14 +72,17 @@ st.markdown(
 
 st.subheader("Recommendation cards")
 state_filter = st.multiselect(
-    "Filter by state", sorted(recs["tactical_state"].unique()),
+    "Filter by state",
+    sorted(recs["tactical_state"].unique()),
     default=sorted(recs["tactical_state"].unique())[:3],
 )
-for _, r in recs[recs["tactical_state"].isin(state_filter)].sort_values("aipw_ate", ascending=False).iterrows():
+for _, r in (
+    recs[recs["tactical_state"].isin(state_filter)]
+    .sort_values("aipw_ate", ascending=False)
+    .iterrows()
+):
     with st.container(border=True):
-        st.markdown(
-            f"### {STATE_LABELS.get(r['tactical_state'], r['tactical_state'])}"
-        )
+        st.markdown(f"### {STATE_LABELS.get(r['tactical_state'], r['tactical_state'])}")
         st.markdown(
             f"**Recommendation:** {ADJUSTMENT_LABELS.get(r['strategy'], r['strategy'])}  \n"
             f"- Expected benefit: **{r['aipw_ate']:+.3f} EPV per possession** "

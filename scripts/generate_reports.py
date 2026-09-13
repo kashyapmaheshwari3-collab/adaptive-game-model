@@ -22,7 +22,7 @@ from src.reporting import (
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate PDF reports")
     parser.add_argument("--quick", action="store_true", help="CI smoke mode")
-    args = parser.parse_args()
+    parser.parse_args()
     t0 = time.time()
     paths = [
         build_technical_pdf(),

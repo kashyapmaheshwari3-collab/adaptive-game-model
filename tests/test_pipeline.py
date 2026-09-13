@@ -9,9 +9,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 import pytest
-
 from src.config import (
-    ADJUSTMENTS,
     DEFAULT_RANDOM_STATE,
     PITCH_LENGTH,
     PITCH_WIDTH,
@@ -133,7 +131,9 @@ class TestModels:
 
     def test_tactical_states_named(self, possession_frame):
         poss, _ = possession_frame
-        states, cluster_map, _, _ = fit_tactical_states(poss, n_clusters=6, random_state=DEFAULT_RANDOM_STATE)
+        states, cluster_map, _, _ = fit_tactical_states(
+            poss, n_clusters=6, random_state=DEFAULT_RANDOM_STATE
+        )
         assert set(states.cat.categories) == set(TACTICAL_STATES)
         # every cluster maps to a *named* state from the vocabulary
         assert set(cluster_map.values()).issubset(set(TACTICAL_STATES))

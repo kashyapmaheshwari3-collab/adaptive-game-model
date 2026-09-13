@@ -5,8 +5,8 @@
 - ``manifest``: records exactly which matches were used (reproducibility).
 """
 
-from .statsbomb_loader import load_events_frame, load_matches_frame
 from .manifest import build_manifest, write_manifest
+from .statsbomb_loader import load_events_frame, load_matches_frame
 
 __all__ = [
     "load_events_frame",

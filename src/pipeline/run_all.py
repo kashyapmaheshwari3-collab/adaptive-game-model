@@ -40,7 +40,9 @@ from src.synthetic import generate_synthetic_dataset
 log = logging.getLogger("agm.pipeline")
 
 
-def _load_data(use_synthetic: bool, competition: int, season: int) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+def _load_data(
+    use_synthetic: bool, competition: int, season: int
+) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
     """Load real StatsBomb data if present, otherwise generate synthetic."""
     sb_dir = RAW_SB_DIR / str(competition) / str(season)
     has_events = any((sb_dir / "events").glob("*.json")) if (sb_dir / "events").exists() else False
@@ -51,9 +53,15 @@ def _load_data(use_synthetic: bool, competition: int, season: int) -> tuple[pd.D
         # only keep matches whose event files were actually downloaded
         with_events = set(events["match_id"].unique())
         matches = matches[matches["match_id"].isin(with_events)].reset_index(drop=True)
-        provenance = {"data_source": "statsbomb_open_data", "competition_id": competition, "season_id": season}
+        provenance = {
+            "data_source": "statsbomb_open_data",
+            "competition_id": competition,
+            "season_id": season,
+        }
     else:
-        log.warning("No raw StatsBomb data found - using deterministic SYNTHETIC data (offline fallback).")
+        log.warning(
+            "No raw StatsBomb data found - using deterministic SYNTHETIC data (offline fallback)."
+        )
         matches, events = generate_synthetic_dataset(n_matches=24, seed=DEFAULT_RANDOM_STATE)
         provenance = {"data_source": "synthetic", "note": "offline/CI fallback generator"}
     return matches, events, provenance
@@ -74,7 +82,12 @@ def run_pipeline(
     matches, events, provenance = _load_data(use_synthetic, competition, season)
     manifest = build_manifest(competition, season, matches, events, provenance)
     write_manifest(manifest)
-    log.info("Loaded %d matches, %d events (%s)", matches["match_id"].nunique(), len(events), provenance["data_source"])
+    log.info(
+        "Loaded %d matches, %d events (%s)",
+        matches["match_id"].nunique(),
+        len(events),
+        provenance["data_source"],
+    )
 
     # ----------------------------------------- standardise / enrich events
     from src.features import enrich_events
@@ -93,10 +106,17 @@ def run_pipeline(
     from src.evaluation import split_possessions
     from src.validation import save_validation_report, validation_report
 
-    train, val, test, split_report = split_possessions(possessions, matches, val_frac=0.2, test_frac=0.2)
+    train, val, test, split_report = split_possessions(
+        possessions, matches, val_frac=0.2, test_frac=0.2
+    )
     val_report = validation_report(events, matches, train, test)
     save_validation_report(val_report)
-    log.info("Validation: %s (%d errors, %d warnings)", val_report["status"], val_report["n_errors"], val_report["n_warnings"])
+    log.info(
+        "Validation: %s (%d errors, %d warnings)",
+        val_report["status"],
+        val_report["n_errors"],
+        val_report["n_warnings"],
+    )
 
     # ------------------------------------------------------------- value model
     from src.models.value_model import fit_calibrator, fit_value_models, predict_epv
@@ -125,10 +145,20 @@ def run_pipeline(
         "n_possessions": int(len(possessions)),
         "league_average_epv": float(baselines.league_average_epv),
     }
-    (PROCESSED_DIR / "evaluation_report.json").write_text(json.dumps(evaluation_report, indent=2, default=str), encoding="utf-8")
-    (PROCESSED_DIR / "error_analysis.json").write_text(json.dumps(err_analysis, indent=2, default=str), encoding="utf-8")
-    (PROCESSED_DIR / "temporal_split.json").write_text(json.dumps(split_report, indent=2), encoding="utf-8")
-    log.info("Value model RMSE (test) = %.4f, ECE = %.4f", metrics["xgboost_calibrated"]["rmse"], calib_test["ece"])
+    (PROCESSED_DIR / "evaluation_report.json").write_text(
+        json.dumps(evaluation_report, indent=2, default=str), encoding="utf-8"
+    )
+    (PROCESSED_DIR / "error_analysis.json").write_text(
+        json.dumps(err_analysis, indent=2, default=str), encoding="utf-8"
+    )
+    (PROCESSED_DIR / "temporal_split.json").write_text(
+        json.dumps(split_report, indent=2), encoding="utf-8"
+    )
+    log.info(
+        "Value model RMSE (test) = %.4f, ECE = %.4f",
+        metrics["xgboost_calibrated"]["rmse"],
+        calib_test["ece"],
+    )
 
     # --------------------------------------------------------- tactical states
     from src.models.tactical_states import fit_tactical_states
@@ -143,7 +173,9 @@ def run_pipeline(
     possessions["tactical_state"] = states_all.values
     train["tactical_state"] = possessions.loc[train.index, "tactical_state"].values
     joblib.dump(kmeans, PROCESSED_DIR / "state_model.joblib")
-    json.dump(cluster_map, (PROCESSED_DIR / "cluster_map.json").open("w", encoding="utf-8"), indent=2)
+    json.dump(
+        cluster_map, (PROCESSED_DIR / "cluster_map.json").open("w", encoding="utf-8"), indent=2
+    )
 
     state_profiles = (
         possessions.groupby("tactical_state", observed=True)
@@ -158,7 +190,10 @@ def run_pipeline(
         .reset_index()
     )
     state_profiles.to_csv(PROCESSED_DIR / "state_profiles.csv", index=False)
-    log.info("Tactical states detected: %s", dict(state_profiles[["tactical_state", "n"]].values.tolist()))
+    log.info(
+        "Tactical states detected: %s",
+        dict(state_profiles[["tactical_state", "n"]].values.tolist()),
+    )
 
     # ------------------------------------------------------- adjustment values
     from src.models.adjustments import estimate_adjustment_values
@@ -195,7 +230,9 @@ def run_pipeline(
     model_card = _build_model_card(
         evaluation_report, err_analysis, ablation, recs, manifest, provenance
     )
-    (PROCESSED_DIR / "model_card.json").write_text(json.dumps(model_card, indent=2, default=str), encoding="utf-8")
+    (PROCESSED_DIR / "model_card.json").write_text(
+        json.dumps(model_card, indent=2, default=str), encoding="utf-8"
+    )
 
     # --------------------------------------------------------------- artefacts
     events.to_parquet(PROCESSED_DIR / "events.parquet", index=False)
@@ -238,7 +275,12 @@ def _build_match_decisions(
             "home_score": int(row["home_score"]),
             "away_score": int(row["away_score"]),
             "states": [
-                {"state": s, "label": str(s), "count": int(c), "share": round(float(c / len(sub)), 3)}
+                {
+                    "state": s,
+                    "label": str(s),
+                    "count": int(c),
+                    "share": round(float(c / len(sub)), 3),
+                }
                 for s, c in state_dist.items()
             ],
             "overall_recommendation": overall,
@@ -247,8 +289,12 @@ def _build_match_decisions(
 
 
 def _build_model_card(
-    evaluation_report: dict, err_analysis: dict, ablation: dict, recs: pd.DataFrame,
-    manifest: dict, provenance: dict,
+    evaluation_report: dict,
+    err_analysis: dict,
+    ablation: dict,
+    recs: pd.DataFrame,
+    manifest: dict,
+    provenance: dict,
 ) -> dict:
     return {
         "model": "Adaptive Game Model v1.0",

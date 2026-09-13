@@ -60,7 +60,9 @@ def download_match_events(match_id: int, out_dir: Path, with_three60: bool = Fal
     return written
 
 
-def select_matches(matches: list[dict], max_matches: int | None, only_teams: list[str]) -> list[dict]:
+def select_matches(
+    matches: list[dict], max_matches: int | None, only_teams: list[str]
+) -> list[dict]:
     """Filter matches by team names (fuzzy) and cap the total count."""
     if only_teams:
         hits: list[dict] = []

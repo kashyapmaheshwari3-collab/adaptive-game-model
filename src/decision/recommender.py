@@ -24,9 +24,7 @@ def build_recommendations(adjustments: pd.DataFrame) -> pd.DataFrame:
         return adjustments
     recs = adjustments.copy()
     recs["ci_excludes_zero"] = (recs["ci_low"] > 0) | (recs["ci_high"] < 0)
-    recs["uplift_ci"] = recs.apply(
-        lambda r: f"[{r['ci_low']:+.3f}, {r['ci_high']:+.3f}]", axis=1
-    )
+    recs["uplift_ci"] = recs.apply(lambda r: f"[{r['ci_low']:+.3f}, {r['ci_high']:+.3f}]", axis=1)
     # rank: prefer bigger uplift, penalise wide CIs and low confidence
     recs["ci_halfwidth"] = (recs["ci_high"] - recs["ci_low"]) / 2
     recs["quality_score"] = recs["aipw_ate"] - recs["ci_halfwidth"]

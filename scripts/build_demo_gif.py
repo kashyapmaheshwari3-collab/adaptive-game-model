@@ -19,7 +19,9 @@ except ImportError:  # pragma: no cover
     _HAS_PIL = False
 
 
-def build_demo_gif(frames: list[Path], out: Path = VISUALS_DIR / "demo.gif", duration_ms: int = 900) -> Path:
+def build_demo_gif(
+    frames: list[Path], out: Path = VISUALS_DIR / "demo.gif", duration_ms: int = 900
+) -> Path:
     """Stitch PNG frames into an animated GIF."""
     if not frames:
         raise FileNotFoundError("no frames provided")

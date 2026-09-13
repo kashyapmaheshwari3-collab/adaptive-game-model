@@ -115,8 +115,7 @@ ADJUSTMENT_LABELS = {
 ADJUSTMENT_RISKS = {
     "build_up_shape_three_two_five": "Higher execution requirement; if the press wins "
     "the ball, the back three is exposed in wide areas.",
-    "fullback_inversion": "Exposes the wide channel behind the inverted full-back on "
-    "transition.",
+    "fullback_inversion": "Exposes the wide channel behind the inverted full-back on transition.",
     "increase_winger_width": "Wingers can become isolated from central support if the "
     "opponent tracks with the full-back.",
     "attack_far_side_half_space": "Longer diagonals increase turnover risk if "
@@ -136,15 +135,11 @@ ADJUSTMENT_EXECUTION = {
     "comfortable ball-playing back line.",
     "fullback_inversion": "Individual - one player change in positioning rules.",
     "increase_winger_width": "Individual - width references for wingers.",
-    "attack_far_side_half_space": "Pattern - scripted switch of play + far-side "
-    "runners.",
+    "attack_far_side_half_space": "Pattern - scripted switch of play + far-side runners.",
     "third_man_combination": "Pattern - rehearsed combinations between three players.",
-    "reduce_risky_central_passes": "Decision rule - pass map restrictions in "
-    "central zones.",
-    "aggressive_counterpress": "Trigger - immediate pressure on the first pass after "
-    "loss.",
-    "mid_block_retreat": "Structural - repositioning below the ball at the moment "
-    "of loss.",
+    "reduce_risky_central_passes": "Decision rule - pass map restrictions in central zones.",
+    "aggressive_counterpress": "Trigger - immediate pressure on the first pass after loss.",
+    "mid_block_retreat": "Structural - repositioning below the ball at the moment of loss.",
 }
 
 # --------------------------------------------------------------------------- #
@@ -159,18 +154,18 @@ OUTCOME_LEVELS = {
     5: "Created a high-value shot",
 }
 
-DANGEROUS_ACTION_XG = 0.10    # key-pass / assist-quality threshold for level 3
-HIGH_VALUE_SHOT_XG = 0.15    # xG threshold for level 5
+DANGEROUS_ACTION_XG = 0.10  # key-pass / assist-quality threshold for level 3
+HIGH_VALUE_SHOT_XG = 0.15  # xG threshold for level 5
 
 # --------------------------------------------------------------------------- #
 # Data / modelling constants
 # --------------------------------------------------------------------------- #
 DEFAULT_RANDOM_STATE = 42
-VAL_FRACTION = 0.25           # temporal holdout fraction (last matches of season)
-N_BOOTSTRAP = 500             # bootstrap resamples for confidence intervals
+VAL_FRACTION = 0.25  # temporal holdout fraction (last matches of season)
+N_BOOTSTRAP = 500  # bootstrap resamples for confidence intervals
 MIN_POSSESSIONS_PER_STRATEGY = 25
-POSITIVITY_MIN_PROPENSITY = 0.02   # positivity / overlap floor for IPW
-PRESSURE_RADIUS = 5.0         # metres - proxy for "near-ball" density
+POSITIVITY_MIN_PROPENSITY = 0.02  # positivity / overlap floor for IPW
+PRESSURE_RADIUS = 5.0  # metres - proxy for "near-ball" density
 
 # Default StatsBomb source (La Liga 2015/16 - elite club level)
 DEFAULT_COMPETITION = 11

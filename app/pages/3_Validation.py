@@ -71,8 +71,10 @@ st.subheader("Ablation")
 ab = abl.get("ablation", {})
 if ab:
     st.dataframe(
-        [{"Feature group": k, "RMSE": round(v.get("rmse", 0), 4), "R2": round(v.get("r2", 0), 3)}
-         for k, v in ab.items()],
+        [
+            {"Feature group": k, "RMSE": round(v.get("rmse", 0), 4), "R2": round(v.get("r2", 0), 3)}
+            for k, v in ab.items()
+        ],
         use_container_width=True,
     )
 

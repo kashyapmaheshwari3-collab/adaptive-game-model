@@ -2,12 +2,11 @@
 
 from __future__ import annotations
 
-import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
 from mplsoccer import Pitch
 
-from src.config import STATE_DESCRIPTIONS, STATE_LABELS, VISUALS_DIR
+from src.config import STATE_LABELS
 
 
 def plot_sequence(events: pd.DataFrame, title: str, out_path) -> None:
@@ -20,19 +19,41 @@ def plot_sequence(events: pd.DataFrame, title: str, out_path) -> None:
     shots = events[events["type"] == "shot"]
     for _, p in passes.iterrows():
         pitch.arrows(
-            p["x"], p["y"], p["end_x"], p["end_y"],
-            width=2.5, headwidth=6, headlength=6, color="#94a3b8",
-            ax=ax, alpha=0.9, zorder=3,
+            p["x"],
+            p["y"],
+            p["end_x"],
+            p["end_y"],
+            width=2.5,
+            headwidth=6,
+            headlength=6,
+            color="#94a3b8",
+            ax=ax,
+            alpha=0.9,
+            zorder=3,
         )
     for _, s in shots.iterrows():
         pitch.scatter(s["x"], s["y"], s=150, color="#f59e0b", edgecolors="black", ax=ax, zorder=5)
     if not shots.empty:
         ax.text(
-            shots.iloc[0]["x"], shots.iloc[0]["y"] + 4, f"xG {shots.iloc[0]['shot_xg']:.2f}",
-            color="#fde68a", fontsize=10, ha="center", zorder=6,
+            shots.iloc[0]["x"],
+            shots.iloc[0]["y"] + 4,
+            f"xG {shots.iloc[0]['shot_xg']:.2f}",
+            color="#fde68a",
+            fontsize=10,
+            ha="center",
+            zorder=6,
         )
     first = events.iloc[0]
-    pitch.scatter(first["x"], first["y"], s=220, color="#f8fafc", edgecolors="#0f172a", marker="o", ax=ax, zorder=5)
+    pitch.scatter(
+        first["x"],
+        first["y"],
+        s=220,
+        color="#f8fafc",
+        edgecolors="#0f172a",
+        marker="o",
+        ax=ax,
+        zorder=5,
+    )
     fig.savefig(out_path, dpi=150, bbox_inches="tight", facecolor="#0f172a")
     plt.close(fig)
 
@@ -46,7 +67,9 @@ def plot_state_heatmap(possessions: pd.DataFrame, state: str, out_path) -> None:
         pitch.hexbin(sub["end_x"], sub["end_y"], gridsize=(12, 8), cmap="Greens", ax=ax)
     ax.set_title(
         f"{STATE_LABELS.get(state, state)}  (n={len(sub)})",
-        fontsize=13, color="white", pad=15,
+        fontsize=13,
+        color="white",
+        pad=15,
     )
     fig.savefig(out_path, dpi=150, bbox_inches="tight", facecolor="#0f172a")
     plt.close(fig)

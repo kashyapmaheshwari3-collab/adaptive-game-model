@@ -31,8 +31,17 @@ from src.config import (
 )
 
 _ACTION_TYPES = [
-    "pass", "shot", "carry", "dribble", "clearance", "duel",
-    "interception", "ball_recovery", "miscontrol", "50_50", "block",
+    "pass",
+    "shot",
+    "carry",
+    "dribble",
+    "clearance",
+    "duel",
+    "interception",
+    "ball_recovery",
+    "miscontrol",
+    "50_50",
+    "block",
 ]
 
 _TURNOVER_TYPES = ["duel", "miscontrol", "interception", "clearance", "50_50"]
@@ -73,7 +82,9 @@ def expected_possession_value(row: pd.Series) -> float:
     if level >= 4:
         value = float(row["max_shot_xg"] or 0.0)
     elif level == 3:
-        value = DANGEROUS_ACTION_XG + 0.04 * max(0.0, (float(row["end_x"]) - FINAL_THIRD_LINE) / 40.0)
+        value = DANGEROUS_ACTION_XG + 0.04 * max(
+            0.0, (float(row["end_x"]) - FINAL_THIRD_LINE) / 40.0
+        )
     elif level == 2:
         value = 0.03
     elif level == 1:
@@ -96,7 +107,9 @@ def build_possessions(events: pd.DataFrame) -> pd.DataFrame:
         return pd.DataFrame()
 
     rows = []
-    for (match_id, possession, team), grp in df.groupby(["match_id", "possession", "possession_team"], sort=False):
+    for (match_id, possession, team), grp in df.groupby(
+        ["match_id", "possession", "possession_team"], sort=False
+    ):
         first = grp.iloc[0]
         last = grp.iloc[-1]
         passes = grp[grp["type"] == "pass"]
@@ -116,13 +129,17 @@ def build_possessions(events: pd.DataFrame) -> pd.DataFrame:
         score_diff = int(sd) if pd.notna(sd) else 0
 
         level = possession_outcome(
-            n_passes, net_progress, float(end_x), has_shot,
-            float(max_shot_xg or 0.0), has_dangerous,
+            n_passes,
+            net_progress,
+            float(end_x),
+            has_shot,
+            float(max_shot_xg or 0.0),
+            has_dangerous,
         )
 
         # pressure proxy: fraction of attacking actions taken under pressure
         pressured = grp["under_pressure"].sum() if "under_pressure" in grp else 0
-        opp_press_events = int((grp["counterpress"].sum() if "counterpress" in grp else 0))
+        opp_press_events = int(grp["counterpress"].sum() if "counterpress" in grp else 0)
         row = {
             "match_id": match_id,
             "possession": possession,

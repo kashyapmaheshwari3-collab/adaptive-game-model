@@ -9,7 +9,6 @@ data-source agnostic.
 from __future__ import annotations
 
 import json
-from pathlib import Path
 
 import pandas as pd
 
@@ -138,8 +137,7 @@ def load_matches_frame(competition: int, season: int) -> pd.DataFrame:
     path = RAW_SB_DIR / str(competition) / str(season) / "matches.json"
     if not path.exists():
         raise FileNotFoundError(
-            f"matches manifest not found: {path}. Run "
-            "`python -m src.ingestion.download` first."
+            f"matches manifest not found: {path}. Run `python -m src.ingestion.download` first."
         )
     matches = json.loads(path.read_text(encoding="utf-8"))
     rows = []
@@ -147,10 +145,12 @@ def load_matches_frame(competition: int, season: int) -> pd.DataFrame:
         home = m.get("home_team", {})
         away = m.get("away_team", {})
         lineup_home = next(
-            (l for l in m.get("lineups", []) if l.get("team_id") == home.get("id")), {}
+            (lineup for lineup in m.get("lineups", []) if lineup.get("team_id") == home.get("id")),
+            {},
         )
         lineup_away = next(
-            (l for l in m.get("lineups", []) if l.get("team_id") == away.get("id")), {}
+            (lineup for lineup in m.get("lineups", []) if lineup.get("team_id") == away.get("id")),
+            {},
         )
         rows.append(
             {
@@ -179,8 +179,7 @@ def load_events_frame(competition: int, season: int) -> pd.DataFrame:
     files = sorted(events_dir.glob("*.json"))
     if not files:
         raise FileNotFoundError(
-            f"no event files in {events_dir}. Run "
-            "`python -m src.ingestion.download` first."
+            f"no event files in {events_dir}. Run `python -m src.ingestion.download` first."
         )
     # formations come from the matches manifest
     matches = load_matches_frame(competition, season)

@@ -32,11 +32,19 @@ from src.models.calibration import calibrate_isotonic
 
 # Ex-ante feature set: observable at possession start.
 FEATURE_COLS = [
-    "start_x", "start_y",
-    "recovery_type", "play_pattern",
-    "minute", "period", "is_home", "score_diff",
-    "team_formation", "opponent_formation",
-    "team_elo", "opp_elo", "elo_diff",
+    "start_x",
+    "start_y",
+    "recovery_type",
+    "play_pattern",
+    "minute",
+    "period",
+    "is_home",
+    "score_diff",
+    "team_formation",
+    "opponent_formation",
+    "team_elo",
+    "opp_elo",
+    "elo_diff",
     "first_pressure",
 ]
 
@@ -73,9 +81,19 @@ def _build_pipeline(kind: str) -> Pipeline:
     if kind == "linear":
         return Pipeline([("pre", pre), ("model", LinearRegression())])
     if kind == "elo_only":
-        return Pipeline([("pre", ColumnTransformer(
-            transformers=[("elo", StandardScaler(), ["team_elo", "opp_elo", "elo_diff"])]
-        )), ("model", LinearRegression())])
+        return Pipeline(
+            [
+                (
+                    "pre",
+                    ColumnTransformer(
+                        transformers=[
+                            ("elo", StandardScaler(), ["team_elo", "opp_elo", "elo_diff"])
+                        ]
+                    ),
+                ),
+                ("model", LinearRegression()),
+            ]
+        )
     return Pipeline([("pre", pre), ("model", DummyRegressor(strategy="mean"))])
 
 
@@ -92,22 +110,32 @@ def fit_value_models(
 
     xgb = Pipeline(
         [
-            ("pre", ColumnTransformer(
-                transformers=[
-                    ("num", StandardScaler(), _NUM_COLS),
-                    ("cat", OneHotEncoder(handle_unknown="ignore", sparse_output=False), _CAT_COLS),
-                ]
-            )),
-            ("model", XGBRegressor(
-                n_estimators=300,
-                max_depth=4,
-                learning_rate=0.05,
-                subsample=0.9,
-                colsample_bytree=0.8,
-                reg_lambda=1.0,
-                random_state=random_state,
-                n_jobs=-1,
-            )),
+            (
+                "pre",
+                ColumnTransformer(
+                    transformers=[
+                        ("num", StandardScaler(), _NUM_COLS),
+                        (
+                            "cat",
+                            OneHotEncoder(handle_unknown="ignore", sparse_output=False),
+                            _CAT_COLS,
+                        ),
+                    ]
+                ),
+            ),
+            (
+                "model",
+                XGBRegressor(
+                    n_estimators=300,
+                    max_depth=4,
+                    learning_rate=0.05,
+                    subsample=0.9,
+                    colsample_bytree=0.8,
+                    reg_lambda=1.0,
+                    random_state=random_state,
+                    n_jobs=-1,
+                ),
+            ),
         ]
     )
     xgb.fit(X, y)

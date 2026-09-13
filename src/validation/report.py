@@ -35,7 +35,9 @@ def validation_report(
     }
 
 
-def save_validation_report(report: dict, out: Path = PROCESSED_DIR / "validation_report.json") -> Path:
+def save_validation_report(
+    report: dict, out: Path = PROCESSED_DIR / "validation_report.json"
+) -> Path:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2), encoding="utf-8")
     return out

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import numpy as np
+import pandas as pd
 
 from src.models.calibration import calibration_metrics
 from src.models.value_model import predict_epv

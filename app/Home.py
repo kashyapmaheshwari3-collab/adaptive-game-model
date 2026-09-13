@@ -33,7 +33,7 @@ with left:
     st.subheader("The question we answer")
     st.markdown(
         "> **\"Given the opponent's structure and our current game model, which tactical "
-        "adjustment is most likely to improve our next attacking or defensive phase?\"**"
+        'adjustment is most likely to improve our next attacking or defensive phase?"**'
     )
     st.markdown(
         """

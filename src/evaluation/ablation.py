@@ -13,7 +13,7 @@ from xgboost import XGBRegressor
 
 from src.config import DEFAULT_RANDOM_STATE
 from src.evaluation.metrics import evaluate_epv
-from src.models.value_model import FEATURE_COLS, _CAT_COLS, _prep_features
+from src.models.value_model import _CAT_COLS, FEATURE_COLS, _prep_features
 
 
 def _encode(df: pd.DataFrame, features: list[str]) -> pd.DataFrame:
@@ -30,12 +30,19 @@ def _encode(df: pd.DataFrame, features: list[str]) -> pd.DataFrame:
     return encoded
 
 
-def _xgb_on(train: pd.DataFrame, test: pd.DataFrame, features: list[str]) -> tuple[XGBRegressor, np.ndarray]:
+def _xgb_on(
+    train: pd.DataFrame, test: pd.DataFrame, features: list[str]
+) -> tuple[XGBRegressor, np.ndarray]:
     X_train = _encode(train, features)
     y = train["epv"].astype(float).values
     model = XGBRegressor(
-        n_estimators=200, max_depth=3, learning_rate=0.05,
-        subsample=0.9, colsample_bytree=0.8, random_state=DEFAULT_RANDOM_STATE, n_jobs=-1,
+        n_estimators=200,
+        max_depth=3,
+        learning_rate=0.05,
+        subsample=0.9,
+        colsample_bytree=0.8,
+        random_state=DEFAULT_RANDOM_STATE,
+        n_jobs=-1,
     )
     model.fit(X_train, y)
     X_test = _encode(test, features).reindex(columns=X_train.columns, fill_value=0)
@@ -51,7 +58,9 @@ def ablation_and_sensitivity(
     feature_groups = {
         "full": FEATURE_COLS,
         "no_elo": [c for c in FEATURE_COLS if c not in ("team_elo", "opp_elo", "elo_diff")],
-        "no_match_context": [c for c in FEATURE_COLS if c not in ("minute", "score_diff", "is_home")],
+        "no_match_context": [
+            c for c in FEATURE_COLS if c not in ("minute", "score_diff", "is_home")
+        ],
         "no_location": [c for c in FEATURE_COLS if c not in ("start_x", "start_y")],
     }
     ablation = {}

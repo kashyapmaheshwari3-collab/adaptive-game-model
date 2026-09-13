@@ -1,7 +1,5 @@
 """Model Card & methodology - transparency for technical audiences."""
 
-import json
-
 import streamlit as st
 
 try:

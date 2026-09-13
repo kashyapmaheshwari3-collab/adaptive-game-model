@@ -17,9 +17,7 @@ def calibrate_isotonic(raw: np.ndarray, y: np.ndarray) -> object:
     return iso
 
 
-def calibration_metrics(
-    y_true: np.ndarray, y_pred: np.ndarray, n_bins: int = 10
-) -> dict:
+def calibration_metrics(y_true: np.ndarray, y_pred: np.ndarray, n_bins: int = 10) -> dict:
     """Expected calibration error + Brier-style mean squared error on deciles."""
     y_true = np.asarray(y_true, dtype=float)
     y_pred = np.asarray(y_pred, dtype=float)

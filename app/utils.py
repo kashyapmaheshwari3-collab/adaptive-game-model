@@ -7,7 +7,6 @@ from functools import lru_cache
 
 import pandas as pd
 import streamlit as st
-
 from src.config import PROCESSED_DIR
 
 

@@ -1,9 +1,9 @@
 """Evaluation package - temporal validation, metrics, error analysis, ablation."""
 
-from .temporal import temporal_split, split_possessions
-from .metrics import evaluate_epv, evaluate_all_models
-from .error_analysis import error_analysis
 from .ablation import ablation_and_sensitivity
+from .error_analysis import error_analysis
+from .metrics import evaluate_all_models, evaluate_epv
+from .temporal import split_possessions, temporal_split
 
 __all__ = [
     "temporal_split",
