@@ -3,11 +3,18 @@
 from __future__ import annotations
 
 import json
+import sys
 from functools import lru_cache
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-from src.config import PROCESSED_DIR
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.config import PROCESSED_DIR  # noqa: E402
 
 
 @lru_cache(maxsize=8)

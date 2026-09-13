@@ -1,6 +1,5 @@
 """Human-in-the-loop - analyst comments, scout override, coach feedback."""
 
-import json
 import time
 
 import pandas as pd
@@ -10,6 +9,10 @@ try:
     from app.utils import load_artefacts
 except ModuleNotFoundError:
     from utils import load_artefacts
+try:
+    from app.hitl_storage import load_feedback, save_feedback
+except ModuleNotFoundError:
+    from hitl_storage import load_feedback, save_feedback
 from src.config import HITL_LOG
 
 st.set_page_config(page_title="Human-in-the-Loop", page_icon="🧠", layout="wide")
@@ -20,16 +23,6 @@ a = load_artefacts()
 recs = a["recommendations"]
 
 HITL_LOG.parent.mkdir(parents=True, exist_ok=True)
-
-
-def _load_hitl() -> list[dict]:
-    if HITL_LOG.exists():
-        return json.loads(HITL_LOG.read_text(encoding="utf-8"))
-    return []
-
-
-def _save_hitl(entries: list[dict]) -> None:
-    HITL_LOG.write_text(json.dumps(entries, indent=2), encoding="utf-8")
 
 
 st.subheader("Add feedback to a recommendation")
@@ -53,22 +46,28 @@ text = st.text_area(
 )
 
 if st.button("Save feedback", type="primary"):
-    entries = _load_hitl()
-    entries.append(
-        {
-            "ts": time.time(),
-            "iso": pd.Timestamp.now(tz="UTC").isoformat(),
-            "recommendation": pick,
-            "role": role,
-            "type": feedback_type,
-            "text": text,
-        }
-    )
-    _save_hitl(entries)
-    st.success("Feedback saved to data/processed/hitl_log.json")
+    try:
+        storage = save_feedback(
+            {
+                "ts": time.time(),
+                "iso": pd.Timestamp.now(tz="UTC").isoformat(),
+                "recommendation": pick,
+                "role": role,
+                "type": feedback_type,
+                "text": text,
+            },
+            HITL_LOG,
+        )
+        st.success(f"Feedback saved to {storage}.")
+    except Exception as exc:
+        st.error(f"Feedback could not be saved: {exc}")
 
 st.subheader("Existing feedback")
-entries = _load_hitl()
+try:
+    entries = load_feedback(HITL_LOG)
+except Exception as exc:
+    entries = []
+    st.error(f"Feedback could not be loaded: {exc}")
 if entries:
     st.dataframe(pd.DataFrame(entries), use_container_width=True)
 else:

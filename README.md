@@ -165,6 +165,9 @@ coach-facing outputs over a larger or less interpretable model. The reasoning
 behind those choices is documented in
 [`docs/DESIGN_DECISIONS.md`](docs/DESIGN_DECISIONS.md).
 
+For persistent Human-in-the-Loop feedback on cloud hosting, see
+[`docs/HITL_STORAGE.md`](docs/HITL_STORAGE.md).
+
 ## Validation summary (honest numbers)
 
 - **Chronological split**: train on earlier matches, validate & test on later matches. Leakage check confirms no match appears in two splits.
