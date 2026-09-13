@@ -208,7 +208,7 @@ For persistent Human-in-the-Loop feedback on cloud hosting, see
 ## Contact
 
 **Kashyap Maheshwari** — [Kashyap.maheshwari3@gmail.com](mailto:Kashyap.maheshwari3@gmail.com)  
-[LinkedIn](https://www.linkedin.com/in/kashyap-maheshwari-02469b85/) · [X](https://www.x.com/AbhisheK2M96) · [Live dashboard](https://football-project-1-u1bbf3e.verdent.app)  
+[LinkedIn](https://www.linkedin.com/in/kashyap-maheshwari-02469b85/) · [X](https://www.x.com/AbhisheK2M96) · [Live dashboard](https://adaptive-game-model-npo8sunnmwz2xnruqmkjc8.streamlit.app)  
 
 **Project repository:** [github.com/kashyapmaheshwari3-collab/adaptive-game-model](https://github.com/kashyapmaheshwari3-collab/adaptive-game-model)
 
